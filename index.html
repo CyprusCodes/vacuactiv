@@ -49,6 +49,9 @@
     #mc_embed_signup input#mc-embedded-subscribe, #mc_embed_signup  input#mc-embedded-subscribe:hover{
         background: #009aee;
     }
+    .icon-holder{
+        font-size: 30px;
+    }
     </style>
 </head>
 
@@ -469,7 +472,9 @@
                                             <br/>
                                             PL +48 059 843 43 43
                                             <br/>
-                                            <a href="#" class="immersion-link">contact@vacuactiv.com</a> </div>
+                                            <a href="#" class="immersion-link">contact@vacuactiv.com</a> 
+                                        </div>
+
                                         <!-- LAYER NR. 7 -->
                                         <div class="tp-caption  " id="slide-129-layer-7" data-x="['left','left','left','left']" data-hoffset="['5','5','5','5']" data-y="['top','top','top','top']" data-voffset="['5','5','5','5']" data-fontsize="['13','13','11','11']" data-width="none" data-height="none"
                                             data-whitespace="normal" data-type="text" data-responsive_offset="off" data-responsive="off" data-frames='[{"delay":"+0","speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
@@ -477,6 +482,8 @@
                                             data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 29; white-space: normal; font-size: 13px; line-height: 20px; font-weight: 400; color: #999999; letter-spacing: 0px; display: inline-block;font-family:Montserrat;"><a href="https://www.facebook.com/VacuActiv/" class="immersion-link" target="_blank">Facebook</a><br />
                                             <a href="https://www.instagram.com/vacuactiv/" class="immersion-link" target="_blank">Instagram</a><br />
                                             <a href="https://www.youtube.com/thevacuactiv" class="immersion-link" target="_blank">YouTube</a> </div>
+                                    
+                                           
                                     </div>
                                 </div>
                             </div>
@@ -1022,33 +1029,34 @@
             <div class="footer-content">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-5">
+                        <div class="col-lg-3">
                             <div class="widget">
                                 <div class="widget-title">VACUACTIV</div>
-                                <p class="mb-5">Built with love in Fort Worth, Texas, USA<br> All rights reserved. Copyright © 2021. INSPIRO.</p>
-                                <a href="https://themeforest.net/item/polo-responsive-multipurpose-html5-template/13708923" class="btn btn-inverted" target="_blank">Purchase Now</a>
+                                <p class="mb-4" style="font-size: 18px;">Experience the ultimate Workout with innovative technologies</p>
+                                 <div style="display: flex; gap: 30px;">
+                                <div class="icon-holder">
+                                    <i class="fab fa-facebook-f"></i>
+                                 </div>
+                                 <div class="icon-holder">
+                                    <i class="fab fa-instagram"></i>
+                                 </div>
+                                 <div class="icon-holder">
+                                   <i class="fab fa-youtube"></i>
+                                 </div>
+                                 </div>
+                                
                             </div>
                         </div>
-                        <div class="col-lg-7">
+                        <div class="col-lg-9">
                             <div class="row">
                                 <div class="col-lg-3">
                                     <div class="widget">
-                                        <div class="widget-title">Features</div>
+                                        <div class="widget-title">Product Categories</div>
                                         <ul class="list">
-                                            <li><a href="#">Layouts</a></li>
-                                            <li><a href="#">Headers</a></li>
-                                            <li><a href="#">Widgets</a></li>
-                                            <li><a href="#">Footers</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3">
-                                    <div class="widget">
-                                        <div class="widget-title">Pages</div>
-                                        <ul class="list">
-                                            <li><a href="#">Portfolio</a></li>
-                                            <li><a href="#">Blog</a></li>
-                                            <li><a href="#">Shop</a></li>
+                                            <li><a href="#">Fitness devices</a></li>
+                                            <li><a href="#">Cryotherapy devices</a></li>
+                                            <li><a href="#">Aqua devices</a></li>
+                                            <li><a href="#">Wellness & SPA devices</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -1056,12 +1064,35 @@
                                     <div class="widget">
                                         <div class="widget-title">Support</div>
                                         <ul class="list">
-                                            <li><a href="#">Help Desk</a></li>
-                                            <li><a href="#">Documentation</a></li>
-                                            <li><a href="#">Contact Us</a></li>
+                                            <li><a href="#">Technical support</a></li>
+                                            <li><a href="#">FAQ</a></li>
                                         </ul>
                                     </div>
                                 </div>
+                                
+                                <div class="col-lg-6">
+                                      <div class="widget">
+                                        <div class="widget-title">Get in Touch</div>
+                        <form class="widget-contact-form" novalidate action="include/contact-form.php" role="form" method="post">
+                            <div class="row">
+                                <div class="form-group col-md-12">
+                               
+                                    <input type="text" aria-required="true" required name="widget-contact-form-name" class="form-control required name" placeholder="Enter your Name">
+                                </div>
+                                <div class="form-group col-md-12">
+                             
+                                    <input type="email" aria-required="true" required name="widget-contact-form-email" class="form-control required email" placeholder="Enter your Email">
+                                </div>
+                            </div>
+                          
+                            <div class="form-group">
+                                
+                                <textarea type="text" name="widget-contact-form-message" required rows="5" class="form-control required" placeholder="Enter your Message"></textarea>
+                            </div>
+                            <button class="btn btn-primary" type="submit" id="form-submit"><i class="fa fa-paper-plane"></i>&nbsp;Send message</button>
+                        </form>
+                    </div>
+                     </div>
                             </div>
                         </div>
                     </div>
@@ -1069,7 +1100,7 @@
             </div>
             <div class="copyright-content">
                 <div class="container">
-                    <div class="copyright-text text-center">&copy; 2021 POLO - Responsive Multi-Purpose HTML5 Template. All Rights Reserved.<a href="https://www.inspiro-media.com" target="_blank" rel="noopener"> INSPIRO</a> </div>
+                    <div class="copyright-text text-center">&copy; 2023  Vacu Activ All Rights Reserved.</div>
                 </div>
             </div>
         </footer>
