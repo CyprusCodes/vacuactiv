@@ -6,3 +6,89 @@
  <link href="css/custom.css" rel="stylesheet">
 
 */
+/* custom stylıng */
+body {
+  overflow-x: hidden;
+}
+@media (max-width: 479px) {
+  .Creative-Title {
+    left: -25px !important;
+  }
+  .text-box {
+    padding: 30px !important;
+  }
+  .text-box a img {
+    width: 100px !important;
+    height: 85px !important;
+  }
+  .text-box a h3 {
+    display: none;
+  }
+  .resized-cols-5 {
+    height: 10rem;
+    padding-left: 0.25rem;
+    padding-right: 0.5rem;
+  }
+}
+@media (max-width: 650px) {
+  #slide-131-layer-34,
+  #slide-131-layer-52,
+  #slide-133-layer-52,
+  #slide-13-layer-52,
+  #slide-135-layer-52,
+  #slide-137-layer-52 {
+    display: none !important;
+  }
+  #slide-131-layer-33,
+  #slide-131-layer-51,
+  #slide-133-layer-51,
+  #slide-13-layer-51,
+  #slide-135-layer-51,
+  #slide-137-layer-51 {
+    margin-top: 3rem !important;
+  }
+  #slide-131-layer-33,
+  #slide-131-layer-51 {
+    font-size: 16px !important;
+    font-weight: 600 !important;
+  }
+}
+
+@media (min-width: 480px) {
+  .Creative-Title {
+    left: 0 !important;
+  }
+}
+.count_section {
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+}
+.layer-29-custom {
+  margin-left: 2rem !important;
+}
+
+@media (max-width: 420px) {
+  .count_section {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+  .counter span {
+    font-size: 25px;
+    line-height: 40px;
+  }
+  .tp-caption {
+    display: none;
+  }
+  a.immersion-link2 {
+    font-size: 18px !important;
+    font-weight: 600 !important;
+  }
+}
+
+#slide-129-layer-33 {
+  display: none !important;
+}
+#slide-131-layer-27,
+#slide-131-layer-17 {
+  display: none !important;
+}
