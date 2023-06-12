@@ -12,11 +12,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <!-- Document title -->
     <title>Vacuactiv</title>
+    <!-- CUSTOM CSS -->
+    <link href="css/custom.css" rel="stylesheet" />
     <!-- Stylesheets & Fonts -->
     <link href="css/plugins.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
-    <!-- CUSTOM CSS -->
-    <link href="css/custom.css" rel="stylesheet" />
     <!-- LOAD JQUERY LIBRARY -->
     <script
       type="text/javascript"
@@ -168,9 +168,9 @@
                                 </div>
                             </li>
                         </ul>
-                    </div> -->
+                    </div> 
 
-            <!--end: Header Extras-->
+            end: Header Extras-->
             <!--Navigation Resposnive Trigger-->
             <div id="mainMenu-trigger">
               <a class="lines-button x"><span class="lines"></span></a>
@@ -181,13 +181,63 @@
               <div class="container">
                 <nav>
                   <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li>
+                      <a href="index.html" data-translate="home_text">Home</a>
+                    </li>
                     <li><a href="index.html">Products</a></li>
                     <li><a href="index.html">About us</a></li>
                     <li><a href="index.html">Get a quotes</a></li>
                     <li><a href="index.html">News</a></li>
                     <li><a href="index.html">FAQ</a></li>
                     <li><a href="index.html">Contact</a></li>
+                    <div class="dropdown droplang">
+                      <button
+                        class="btn btn-primary dropdown-toggle dropdownMenuButton"
+                        type="button"
+                        id="dropdownMenuButton"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                        onclick="toggleLangBtn()"
+                      >
+                        en
+                      </button>
+                      <div
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuButton"
+                        id="lang"
+                        x-placement="bottom-start"
+                        style="
+                          position: absolute;
+                          transform: translate3d(0px, 38px, 0px);
+                          top: 0px;
+                          left: 0px;
+                          will-change: transform;
+                        "
+                      >
+                        <a class="dropdown-item" href="?lang=en"
+                          >en
+                          <img
+                            src="images/lang-img/en.png"
+                            alt="en"
+                            width="20%"
+                        /></a>
+                        <a class="dropdown-item" href="?lang=ru"
+                          >ru
+                          <img
+                            src="images/lang-img/ru.png"
+                            alt="ru"
+                            width="20%"
+                        /></a>
+                        <a class="dropdown-item" href="?lang=gr"
+                          >gr
+                          <img
+                            src="images/lang-img/fr.png"
+                            alt="gr"
+                            width="20%"
+                        /></a>
+                      </div>
+                    </div>
                   </ul>
                 </nav>
               </div>
@@ -3404,7 +3454,6 @@
                   data-x="['center','center','center','center']"
                   data-hoffset="['-300','-250','-180','-180']"
                   data-y="['top','top','top','top']"
-                  data-voffset="['480','410','500','500']"
                   data-fontsize="['35','35','25','25']"
                   data-lineheight="['50','50','35','35']"
                   data-width="['441','440','340','340']"
@@ -3515,7 +3564,6 @@
                   data-x="['center','center','center','center']"
                   data-hoffset="['300','250','180','180']"
                   data-y="['top','top','top','top']"
-                  data-voffset="['480','410','500','500']"
                   data-fontsize="['35','35','25','25']"
                   data-lineheight="['50','50','35','35']"
                   data-width="['441','441','340','340']"
@@ -3586,7 +3634,7 @@
                 <!-- LAYER NR. 26 -->
                 <a
                   class="tp-caption rev-btn tp-resizeme"
-                  href="https://themeforest.net/item/polo-responsive-multipurpose-html5-template/13708923"
+                  href="#"
                   target="_blank"
                   rel="nofollow"
                   id="slide-131-layer-53"
@@ -5069,7 +5117,6 @@
                 >
                   <div id="mc_embed_signup">
                     <form
-                      action="//themepunch.us9.list-manage.com/subscribe/post?u=a5738148e5ec630766e28de16&amp;id=3e718acc63"
                       method="post"
                       id="mc-embedded-subscribe-form"
                       name="mc-embedded-subscribe-form"
@@ -5087,22 +5134,21 @@
                           placeholder="Your Email Address"
                           required
                         />
-                        <div style="position: absolute; left: -5000px">
-                          <input
-                            type="text"
-                            name="b_a5738148e5ec630766e28de16_3e718acc63"
-                            tabindex="-1"
-                            value=""
-                          />
-                        </div>
+
                         <input
                           type="submit"
-                          value="Subscribe"
                           name="subscribe"
                           id="mc-embedded-subscribe"
                           style="display: inline-block; cursor: pointer"
                           class="button"
                         />
+                      </div>
+                      <div
+                        class="alert-danger p-1"
+                        id="trois"
+                        data-translate="email_must"
+                      >
+                        <div class="content"></div>
                       </div>
                     </form>
                   </div>
@@ -5115,7 +5161,7 @@
                 Our advisors are available to answer any question. Feel free to
                 join our Live Chat.
               </p>
-              <a class="btn btn-light btn-outline">Join</a>
+              <a class="btn btn-light btn-outline" id="join_btn">Join</a>
             </div>
 
             <div class="col-lg-3">
@@ -5181,10 +5227,12 @@
                       <div class="widget-title">Get in Touch</div>
                       <form
                         class="widget-contact-form"
-                        novalidate
-                        action="include/contact-form.php"
                         role="form"
                         method="post"
+                        id="contact-us"
+                        name="contact-us"
+                        data-success-message-delay="40000"
+                        novalidate
                       >
                         <div class="row">
                           <div class="form-group col-md-12">
@@ -5192,7 +5240,7 @@
                               type="text"
                               aria-required="true"
                               required
-                              name="widget-contact-form-name"
+                              name="fullName"
                               class="form-control required name"
                               placeholder="Enter your Name"
                             />
@@ -5202,7 +5250,7 @@
                               type="email"
                               aria-required="true"
                               required
-                              name="widget-contact-form-email"
+                              name="email"
                               class="form-control required email"
                               placeholder="Enter your Email"
                             />
@@ -5212,7 +5260,7 @@
                         <div class="form-group">
                           <textarea
                             type="text"
-                            name="widget-contact-form-message"
+                            name="message"
                             required
                             rows="5"
                             class="form-control required"
@@ -5226,6 +5274,16 @@
                         >
                           <i class="fa fa-paper-plane"></i>&nbsp;Send message
                         </button>
+                        <input
+                          type="hidden"
+                          name="recaptcha_response"
+                          id="recaptchaResponse"
+                        />
+                        <div class="row">
+                          <div id="form-result2" class="form-result alert">
+                            <div class="content"></div>
+                          </div>
+                        </div>
                       </form>
                     </div>
                   </div>
@@ -5242,6 +5300,8 @@
           </div>
         </div>
       </footer>
+
+      <script src="js/custom.js"></script>
 
       <!-- END REVOLUTION SLIDER -->
       <script type="text/javascript">
@@ -5742,9 +5802,11 @@
     <a id="scrollTop"
       ><i class="icon-chevron-up"></i><i class="icon-chevron-up"></i
     ></a>
+    <script src="js/translations.js"></script>
     <!--Plugins-->
     <script src="js/plugins.js"></script>
     <!--Template functions-->
     <script src="js/functions.js"></script>
+    <!--custom functions-->
   </body>
 </html>
