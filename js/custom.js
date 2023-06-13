@@ -3,8 +3,7 @@
 $("#form-submit").on("click", function (e) {
   let x = document.forms["contact-us"]["email"].value;
   var $formContact = $("#contact-us"),
-    url =
-      "https://script.google.com/macros/s/AKfycbxSpxS8XFDMRwBBEb3ESjDaSI-WEWx4Dx56jM45J2MebDujiKWR5ZHqGoSSEWT_na8r/exec"; //this has to be taken from a deployed google spread sheet
+    url = "https://api.youth.com/"; //this has to be taken from a deployed google spread sheet
   if (x == "") {
     alert("Email must be filled out");
     return false;
@@ -53,6 +52,9 @@ $("#form-submit").on("click", function (e) {
       $("#form-submit").html("<i class='icon-loader fa-spin' > </i> Sending..")
     );
   }
+  setTimeout(function () {
+    $("#form-result2").css("display", "none");
+  }, 3500);
 });
 
 /* subscribe form */
@@ -73,6 +75,7 @@ $("#mc-embedded-subscribe").on("click", function (event) {
 
     $.ajax({
       url: "https://api.cypruscodes.com/subscribe",
+
       method: "POST",
       dataType: "json",
       data: { email: email, channel: "vacuactiv" },
@@ -97,6 +100,9 @@ $("#mc-embedded-subscribe").on("click", function (event) {
       },
     });
   }
+  setTimeout(function () {
+    $("#trois").css("display", "none");
+  }, 3500);
 });
 
 /* show hide language btn */
@@ -105,6 +111,9 @@ let lang = document.getElementById("lang");
 function toggleLangBtn() {
   if (lang.className === "dropdown-menu") {
     lang.classList.add("show");
+    setTimeout(function () {
+      lang.classList.remove("show");
+    }, 3000);
   } else {
     lang.classList.remove("show");
   }
