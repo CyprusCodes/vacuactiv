@@ -61,8 +61,7 @@ $("#mc-embedded-subscribe").on("click", function (event) {
   let email = document.forms["mc-embedded-subscribe-form"]["EMAIL"].value;
 
   if (email == "") {
-    $("#trois > .content").html("Email must be filled out");
-    $("#trois").css("display", "block");
+    alert("Email must be filled out !");
     return false;
   } else {
     event.preventDefault();
