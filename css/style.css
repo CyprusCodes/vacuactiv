@@ -41,6 +41,7 @@ section .page-content { padding: 0; }
     BODY
 -----------------------------------------------------------------*/
 html { overflow-x: hidden; }
+body { overflow-x: hidden; }
 
 body .body-inner { padding: 0; margin: 0; }
 
