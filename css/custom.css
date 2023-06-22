@@ -60,7 +60,7 @@ body {
   /* fix size of nav bar due to russian languages */
 }
 .dropdown-item {
-  height: 4rem !important;
+  /* height: 4rem !important;*/
 }
 @media (min-width: 992px) {
   .dropdown-menu {
