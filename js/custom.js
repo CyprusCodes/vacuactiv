@@ -284,9 +284,6 @@ let lang = document.getElementById("lang");
 function toggleLangBtn() {
   if (lang.className === "dropdown-menu") {
     lang.classList.add("show");
-    setTimeout(function () {
-      lang.classList.remove("show");
-    }, 3000);
   } else {
     lang.classList.remove("show");
   }
