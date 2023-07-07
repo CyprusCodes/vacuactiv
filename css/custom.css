@@ -115,7 +115,6 @@ body {
   padding: 0px 10px;
   background-color: rgb(0, 186, 240);
 }
-
 #a_cat i {
   transition: transform 0.4s ease; /* Added transition property */
 }
@@ -123,10 +122,19 @@ body {
   transform: translateX(10px);
   opacity: 0;
 }
-
+/* #head_section_flop{
+  background-image: url(https://vacuactiv.com/wp-content/uploads/2022/03/cryo-total-1.jpg);
+  width: 100%;
+  height: 100%;
+} */
 
 .cat_cart h1{
   padding: 1.5rem;
+}
+
+.flops div{
+  border-bottom: 2px solid #ffffff;
+  margin-bottom: 10px;
 }
 @media (max-width: 1420px) {
   #slide-133-layer-17{
