@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
   <meta name="author" content="INSPIRO" />
-
+  
   <script src="https://cdn.tailwindcss.com"></script>
   <meta name="description" content="Themeforest Template Polo, html template" />
   <link rel="icon" type="image/png" href="images/favicon.png" />
@@ -202,7 +202,6 @@
               data-easein="default"
               data-easeout="default"
               data-masterspeed="2000"
-              data-thumb="https://vacuactiv.com/wp-content/uploads/2022/03/cryo-total-1.jpg"
               data-rotate="0"
               data-saveperformance="off"
               data-title="BodyShape v2"
@@ -226,7 +225,7 @@
                 data-bgfit="cover"
                 data-bgparallax="3"
                 class="rev-slidebg"
-                data-no-retina
+                id="item_main_img"
               />
               <!-- LAYERS -->
               <!-- BACKGROUND VIDEO LAYER -->
@@ -323,7 +322,7 @@
                 data-paddingbottom="[0,0,0,0]"
                 data-paddingleft="[0,0,0,0]"
                 style="z-index: 7; white-space: nowrap; text-transform: left"
-                id="this_item_sm_desc"
+                
               >
                 Cryotherapy chamber for wbc and pbc treatment
               </div>
@@ -349,7 +348,7 @@
                 data-paddingbottom="[0,0,0,0]"
                 data-paddingleft="[0,0,0,0]"
                 style="z-index: 8; white-space: nowrap; text-transform: left"
-                id="this_item_name"
+                
               >
                 Cryo Total<br />
               </div>
@@ -414,9 +413,10 @@
                   -moz-box-sizing: border-box;
                   -webkit-box-sizing: border-box;
                   cursor: pointer;
+                  text-transform: uppercase;
                 "
               >
-                MORE
+                details
               </a>
             </li>
             <!-- SLIDE  -->
@@ -436,12 +436,12 @@
     <section id="detail"
       class="flex flex-col items-center justify-center gap-4 w-screen bg-zinc-800 py-4 px-2">
       <div class="w-full md:w-3/4 px-2 py-4 flex flex-col items-center justify-center text-center text-white">
-        <h2 class="text-4xl font-bold">
+        <h2 class="text-4xl font-bold" id="item_detail_1">
           Cooled air chamber for cryotherapy treatment .
         </h2>
         <div class="mt-[5rem] md:mt-[1px]">
-          <p style="text-align: center">
-            <strong>Discover the ultimate biohacking solution for your body at Cryo
+          <p style="text-align: center" id="item_detail_strong_1">
+            <strong >Discover the ultimate biohacking solution for your body at Cryo
               Total’s state-of-the-art cryotherapy chamber.</strong>
             Step into a world of unparalleled benefits as you immerse yourself
             in subzero temperatures of -140 degrees for a transformative 2 to
@@ -473,11 +473,11 @@
       <div
         class="w-full md:w-3/6 px-2 py-4 flex md:flex-row md:items-start flex-col items-center justify-center text-center text-white">
         <div class="mt-[5rem]">
-          <h2 class="text-4xl font-bold">
+          <h2 class="text-4xl font-bold" id="item_detail_2">
             Efficient therapy in low temperatures
           </h2>
 
-          <p style="text-align: center">
+          <p style="text-align: center" id="item_detail_2_next">
             According to scientific and medical research, the optimum
             efficiency of whole body cryotherapy procedures, is achieved once
             the body is exposed to temperatures up to -120 to -140°C (-184F to
@@ -486,10 +486,10 @@
         </div>
 
         <div class="mt-[1rem] px-4 b-2 flex flex-col items-start justify-center gap-4">
-          <h2 class="text-3xl text-white font-bold md:font-medium w-full text-left mt-[5rem]">
+          <h2 class="text-3xl text-white font-bold md:font-medium w-full text-left mt-[5rem]" id="item_detail_3">
             Temperature inside
           </h2>
-          <h1 class="text-8xl font-thin mt-4" style="color: #009aee !important">
+          <h1 class="text-8xl font-thin mt-4" id="item_detail_3_blue" style="color: #009aee !important">
             - 140<sup>℃</sup>
           </h1>
         </div>
@@ -1555,6 +1555,7 @@
   <!--Template functions-->
   <script src="js/functions.js"></script>
   <!--custom functions-->
+  <script src="js/product.js"></script>
 </body>
 
 </html>

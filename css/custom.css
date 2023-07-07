@@ -147,9 +147,7 @@ body {
     display: none !important;
   }
 }
-.dropdown-item {
-  /* height: 4rem !important;*/
-}
+
 @media (min-width: 992px) {
   .dropdown-menu {
     margin-top: 2.7rem !important;
