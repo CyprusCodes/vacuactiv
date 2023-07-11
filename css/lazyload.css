@@ -245,3 +245,27 @@
     line-height: 68px;
     font-weight: 700;
 }
+.rollshape-list li{
+    margin-bottom: 1rem !important;
+}
+.rollshape-list{
+    font-size: 24px;
+    line-height: 32px;
+    color: rgb(211, 211, 211);
+}
+.vc_custom_1659085368537 {
+    background-image: url(https://vacuactiv.com/wp-content/uploads/2022/07/medicine-absorbtion-activ-slim-ir-6in1.jpg?id=8189)!important;
+    background-position: center!important;
+    background-repeat: no-repeat!important;
+    background-size: cover!important;
+    border-radius: 40px;
+    padding: 20px;
+}
+.vc_custom_1659085386292 {
+    background-image: url(https://vacuactiv.com/wp-content/uploads/2022/07/calm-sleep-improve-activ-slim-ir-6in1.jpg?id=8191)!important;
+    background-position: center!important;
+    background-repeat: no-repeat!important;
+    background-size: cover!important;
+    border-radius: 40px;
+    padding: 20px;
+}
