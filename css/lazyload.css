@@ -49,6 +49,9 @@
     .sharp_tyt{
         top: 25% !important;
     }
+    .mbang{
+        margin-top: -33rem !important;
+    }
 }
 .qodef-content-slider-udx-second .qodef-content-slider-udx-title {
     font-size: 42px;
@@ -103,6 +106,17 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
+    .mt-3.text-xl.font-semibold.tracking-tight.text-white{
+        font-size: 50px !important;
+        margin-top: -5rem !important;
+        font-weight: 600 !important;
+    }
+    .vc_col-sm-offset-1\/5 {
+        margin-left: 1px !important;
+    }
+
+    
+
     @media (min-width: 767px){
         .logos-heading {
             margin-top: 130px;
@@ -122,6 +136,14 @@
         .font-42, .font-42 h2 {
             font-size: 42px;
             line-height: 54px;
+        }
+        .mt-3.text-xl.font-semibold.tracking-tight.text-white{
+            font-size: 120px !important;
+            margin-top: -5rem !important;
+            line-height: 70px;
+        }
+        .mbang{
+            margin-top: -32rem !important;
         }
         
         
@@ -151,7 +173,15 @@
             font-size: 134px;
             line-height: 144px;
         }
+        .mt-3.text-xl.font-semibold.tracking-tight.text-white {
+            font-size: 180px !important;
+            line-height: 100px;
+        }
+        .mbang{
+            margin-top: -45rem !important;
+        }
     }
+    
     .p-small p {
         color: #a4a4a4;
         font-size: 11px;
