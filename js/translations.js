@@ -66,7 +66,7 @@ $.i18n.en = {
   product_desc_3:
     "Cryo Total is a cryotherapy chamber which used cooling by cold air, which is a most advanced technology than cooling by nitrogen vapor. Client does not contact with any chemical substances and stays away from involve in nitrogen vapor which is used in a regular cryotherapy chambers where head is over. Cryo Total cryochamber involve whole body including head to cryotherapy treatment using just cooled natural air.",
   view_project:
-    "VIEW PROJECT <i class='fa fa-icon-long-arrow-right' style='margin-left: 5px; color: #e10000'></i>",
+    "VIEW PRODUCT <i class='fa fa-icon-long-arrow-right' style='margin-left: 5px; color: #e10000'></i>",
   stay_update: "Stay updated",
   stay_update_desc:
     "Stay up-to-date with current special discounts, <br />new devices and the latest <br />news from the Vacu Activ world.",
