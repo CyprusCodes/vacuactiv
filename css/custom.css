@@ -272,6 +272,9 @@ body {
     font-size: 16px !important;
     font-weight: 600 !important;
   }
+  .vb-mbun{
+    top: 25% !important;
+  }
 }
 @media (min-width: 320px) and (max-width: 400px) {
   #slide-131-layer-53 {
@@ -292,6 +295,9 @@ body {
 .layer-29-custom {
   margin-left: 2rem !important;
 }
+.vb-mbun{
+  top: 20% !important;
+}
 
 @media (max-width: 420px) {
   .count_section {
@@ -309,6 +315,9 @@ body {
     font-size: 18px !important;
     font-weight: 500 !important;
   }
+  .vb-mbun{
+    top: 20% !important;
+  }
 }
 
 #slide-129-layer-33 {
@@ -317,4 +326,42 @@ body {
 #slide-131-layer-27,
 #slide-131-layer-17 {
   display: none !important;
+}
+.mpangs:hover{
+  background-color: #fbfbfb;
+}
+.vb-mbun {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 20%;
+}
+.bmlar{
+  margin-top: -58rem !important;
+}
+@media (min-width: 420px) {
+  .vb-mbun{
+    top: 25% !important;
+  }
+  .bmlar{
+    margin-top: -45rem !important;
+  }
+}
+@media (min-width: 740px) {
+  .vb-mbun{
+    top: 35% !important;
+  }
+}
+@media (min-width: 1000px) {
+  .vb-mbun{
+    top: 25% !important;
+  }
+}
+@media (min-width: 1200px) {
+  .vb-mbun{
+    top: 25% !important;
+  }
+}
+.tp-parallax-wrap.tp-parallax-container{
+  margin-top: 10rem !important;
 }
