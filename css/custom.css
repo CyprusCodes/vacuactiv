@@ -318,6 +318,7 @@ body {
   .vb-mbun{
     top: 20% !important;
   }
+  
 }
 
 #slide-129-layer-33 {
@@ -346,10 +347,14 @@ body {
   .bmlar{
     margin-top: -45rem !important;
   }
+  
 }
 @media (min-width: 740px) {
   .vb-mbun{
     top: 35% !important;
+  }
+  .mblur{
+    line-height: 100px !important;
   }
 }
 @media (min-width: 1000px) {
@@ -362,6 +367,30 @@ body {
     top: 25% !important;
   }
 }
-.tp-parallax-wrap.tp-parallax-container{
+#rev_slider_84_1 .tp-parallax-wrap.tp-parallax-container{
   margin-top: 10rem !important;
+}
+.mblur{
+  line-height: 32px !important;
+}
+@media (min-width: 756px) {
+  .mblur{
+    line-height: 100px !important;
+  }
+}
+@media (min-width: 1200px) {
+  .mblur{
+    line-height: 150px !important;
+  }
+}
+.mblur{
+  color: #151515 !important;
+}
+.vc_custom_1658390310234 {
+  background-image: url(https://vacuactiv.com/wp-content/uploads/2022/07/san-diego-3.jpg?id=7943);
+  padding-top: 15rem !important;
+  padding-bottom: 15rem !important;
+  padding-left: 5rem !important;
+  padding-right: 5rem !important;
+  border-radius: 40px;
 }
