@@ -85,12 +85,19 @@ $.i18n.en = {
   f_cryo_devices: "Cryotherapy Devices",
   f_aqua_devices: "Aqua Devices",
   f_wellness_spa: "Wellness & SPA Devices",
+  f_furniture: "Furniture & Others",
   f_support: "Support",
   f_tech_support: "Technical support",
   f_faq: "FAQ",
   f_get_in_touch: "Get in Touch",
   send_message: "<i class='fa fa-paper-plane'></i>&nbsp;Send message",
   f_copy_right: "&copy; 2023 Vacu ACtiv All Rights Reserved.",
+
+  main_text_cat: "Product<br /> Categories",
+    scorll_cat: "SCROLL",
+    cat_text_cat: "CATEGORY <i class='fa fa-icon-long-arrow-right'></i>",
+
+
 };
 $.i18n.ru = {
   home_text_link: "Дом",
@@ -157,12 +164,17 @@ $.i18n.ru = {
   f_cryo_devices: "Приборы для криотерапии",
   f_aqua_devices: "Аква Устройства",
   f_wellness_spa: "Велнес и СПА устройства",
+  f_furniture: "Мебель и прочее",
   f_support: "Поддерживать",
   f_tech_support: "Техническая поддержка",
   f_faq: "Вопрос-Ответ",
   f_get_in_touch: "Связаться",
   send_message: "<i class='fa fa-paper-plane'></i>&nbsp;отправлять",
   f_copy_right: "&copy; 2023 Vacu Activ Все права защищены.",
+
+  main_text_cat: "Категории<br /> товаров",
+    scorll_cat: "ПРОКРУТКА",
+    cat_text_cat: "КАТЕГОРИЯ <i class='fa fa-icon-long-arrow-right'></i>",
 };
 
 $.i18n.gr = {
@@ -229,12 +241,17 @@ $.i18n.gr = {
   f_cryo_devices: "Συσκευές κρυοθεραπείας",
   f_aqua_devices: "Συσκευές Aqua",
   f_wellness_spa: "Συσκευές ευεξίας & SPA",
+  f_furniture: "Έπιπλα και άλλα",
   f_support: "Υποστήριξη",
   f_tech_support: "Τεχνική υποστήριξη",
   f_faq: "FAQ",
   f_get_in_touch: "Ερχομαι σε επαφή",
   send_message: "<i class='fa fa-paper-plane'></i>&nbsp;στείλετε",
   f_copy_right: "&copy; 2023 Vacu Activ Με την επιφύλαξη παντός δικαιώματος.",
+
+  main_text_cat: "Κατηγορίες<br /> προϊόντα",
+    scorll_cat: "ΘΕΑ",
+    cat_text_cat: "ΚΑΤΗΓΟΡΙΑ <i class='fa fa-icon-long-arrow-right'></i>",
 };
 
 var i18n = $.i18n();
