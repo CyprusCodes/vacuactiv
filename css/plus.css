@@ -1,4 +1,7 @@
-
+#contact-us input{
+    color: #151516 !important;
+    padding-left: 0.45rem;
+}
 :where(.wp-block-button__link) {
     border-radius: 9999px;
     box-shadow: none;
