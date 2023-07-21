@@ -1,3 +1,36 @@
+let lang = document.getElementById("lang");
+
+function toggleLangBtn() {
+  if (lang.className === "dropdown-menu") {
+    lang.classList.add("show");
+  } else {
+    lang.classList.remove("show");
+  }
+}
+
+$.i18n = function (options) {
+    options = $.extend(
+      {},
+      {
+        lang: window.localStorage.getItem("language") || "en",
+        data: $.i18n,
+      },
+      options
+    );
+  
+    var langStore = options.data[options.lang];
+    this.setLang = function (language) {
+      window.localStorage.setItem("language", language);
+      langStore = options.data[language];
+    };
+  
+    this.getItem = function (key) {
+      return langStore[key];
+    };
+  
+    return this;
+  };
+
 $.i18n = function (options) {
   options = $.extend(
     {},
