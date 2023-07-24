@@ -184,7 +184,7 @@ $.i18n.en = {
   treatment_time: "<strong>2 min treatment</strong> in Activ Cryo V2",
   ice_bath: "<strong>20 min</strong> in Ice bath",
   comparison: "Compare<br> crytoherapy vs ice bath",
-  ice_bath_specifications: "Ice Bath",
+  ice_bath_specifications: "<strong>20 min</strong> Ice Bath",
   extreme_cold: "Extreme Cold Air up to -180",
   treatment_delivery: "Treatment Delivery",
   cold_water: "Cold Water (8<sup>o</sup>C to 16<sup>o</sup>C)",
