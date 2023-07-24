@@ -1,13 +1,5 @@
 /* show hide language btn */
-let lang = document.getElementById("lang");
 
-function toggleLangBtn() {
-  if (lang.className === "dropdown-menu") {
-    lang.classList.add("show");
-  } else {
-    lang.classList.remove("show");
-  }
-}
 /* contact form  */
 
 $("#form-submit").on("click", function (e) {
