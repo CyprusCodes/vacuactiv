@@ -1,3 +1,13 @@
+let lang = document.getElementById("lang");
+
+function toggleLangBtn() {
+  if (lang.className === "dropdown-menu") {
+    lang.classList.add("show");
+  } else {
+    lang.classList.remove("show");
+  }
+}
+
 $.i18n = function (options) {
   options = $.extend(
     {},
@@ -92,6 +102,12 @@ $.i18n.en = {
   f_get_in_touch: "Get in Touch",
   send_message: "<i class='fa fa-paper-plane'></i>&nbsp;Send message",
   f_copy_right: "&copy; 2023 Vacu ACtiv All Rights Reserved.",
+
+  main_text_cat: "Product<br /> Categories",
+    scorll_cat: "SCROLL",
+    cat_text_cat: "CATEGORY <i class='fa fa-icon-long-arrow-right'></i>",
+
+
 };
 $.i18n.ru = {
   home_text_link: "Дом",
@@ -165,6 +181,10 @@ $.i18n.ru = {
   f_get_in_touch: "Связаться",
   send_message: "<i class='fa fa-paper-plane'></i>&nbsp;отправлять",
   f_copy_right: "&copy; 2023 Vacu Activ Все права защищены.",
+
+  main_text_cat: "Категории<br /> товаров",
+    scorll_cat: "ПРОКРУТКА",
+    cat_text_cat: "КАТЕГОРИЯ <i class='fa fa-icon-long-arrow-right'></i>",
 };
 
 $.i18n.gr = {
@@ -238,6 +258,10 @@ $.i18n.gr = {
   f_get_in_touch: "Ερχομαι σε επαφή",
   send_message: "<i class='fa fa-paper-plane'></i>&nbsp;στείλετε",
   f_copy_right: "&copy; 2023 Vacu Activ Με την επιφύλαξη παντός δικαιώματος.",
+
+  main_text_cat: "Κατηγορίες<br /> προϊόντα",
+    scorll_cat: "ΘΕΑ",
+    cat_text_cat: "ΚΑΤΗΓΟΡΙΑ <i class='fa fa-icon-long-arrow-right'></i>",
 };
 
 var i18n = $.i18n();
