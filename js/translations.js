@@ -1,3 +1,13 @@
+let lang = document.getElementById("lang");
+
+function toggleLangBtn() {
+  if (lang.className === "dropdown-menu") {
+    lang.classList.add("show");
+  } else {
+    lang.classList.remove("show");
+  }
+}
+
 $.i18n = function (options) {
   options = $.extend(
     {},

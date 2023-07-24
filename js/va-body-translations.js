@@ -121,7 +121,7 @@ $.i18n = function (options) {
     cts: "Set patient parameters",
     cts_i: "We have implemented in the software the ability to set user parameters such as gender, height, weight and age to get accurate calories burned summary after the training session.",
     ctt: "Training screen",
-    ctt_p: "<strong >The training screen allows you to easily monitor and change the parameters of the functions in real time.</strong > Modify the infrared power, vacuum, treadmill speed, incline angle and more.",
+    ctt_p: "<strong>The training screen allows you to easily monitor and change the parameters of the functions in real time.</strong > Modify the infrared power, vacuum, treadmill speed, incline angle and more.",
     vts: "Virtual track selection",
     vts_p: "<strong >The virtual run function allows you to choose a place in the world where you want to train.</strong > The screen will display a video recording during your training session. You can run in Buenos Aires, Los Angeles, Italy, Costa Rica, Chicago or San Francisco.",
     vst: "Virtual track<br /> screen",
