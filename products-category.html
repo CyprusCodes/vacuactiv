@@ -73,9 +73,27 @@
       font-size: 30px;
     }
   </style>
+
 </head>
 
+<script>
+  window.addEventListener('load', function () {
+    // Set a delay of 100 milliseconds before fading out the black overlay
+    setTimeout(function () {
+      var blackOverlay = document.getElementById('black-overlay');
+      blackOverlay.style.transition = 'opacity 200ms'; // Add transition property for a smooth fade-out
+      blackOverlay.style.opacity = '0'; // Fade out the black overlay
+      document.body.style.overflow = 'visible'; // Restore scrollbars
+      // Optionally, you can remove the black overlay from the DOM after fading it out
+      setTimeout(function () {
+        blackOverlay.remove();
+      }, 200);
+    }, 100);
+  });
+</script>
+
 <body>
+  <div id="black-overlay"></div>
   <!-- Body Inner -->
   <div class="body-inner">
     <!-- Header -->
@@ -424,8 +442,7 @@
         </div>
         <div class="w-4/4 flex items-center justify-center p-4">
           <img class="xl:h-[24rem] lg:h-[14rem] sm:h-[12rem]"
-            src="https://vacuactiv.com/wp-content/uploads/2022/04/vacu-activ-furniture-devices-category.jpg"
-            alt="" />
+            src="https://vacuactiv.com/wp-content/uploads/2022/04/vacu-activ-furniture-devices-category.jpg" alt="" />
         </div>
       </div>
     </section>
