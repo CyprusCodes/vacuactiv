@@ -111,6 +111,11 @@ $.i18n.en = {
   adjustable_bike_resistance: "Adjustable bike resistance",
   hand_shower: "Hand shower",
   touch_display: "Touch display size",
+  h_t: "176 cm (69,29 inches)",
+  w_t: "194 cm (76,38 inches)",
+  d_t: "157 cm (61,81 inches)",
+  t_d: "8 -inches (waterproof)",
+  spt: "8<sup>-inch</sup>",
 
   //footer
   stay_update: "Stay updated",
@@ -226,7 +231,11 @@ $.i18n.ru = {
   adjustable_bike_resistance: "Регулируемое сопротивление велосипеда",
   hand_shower: "Ручной душ",
   touch_display: "Размер сенсорного дисплея",
-
+  h_t: "176 см (69,29 дюймов)",
+  w_t: "194 см (76,38 дюймов)",
+  d_t: "157 см (61,81 дюймов)",
+  t_d: "8 дюймов (водонепроницаемый)",
+  spt: "8<sup>дюйм</sup>",
   //footer
   stay_update: "Оставаться в курсе",
   stay_update_desc:
@@ -340,7 +349,11 @@ $.i18n.gr = {
   adjustable_bike_resistance: "Ρυθμιζόμενη αντίσταση ποδηλάτου",
   hand_shower: "Χειρός ντους",
   touch_display: "Μέγεθος οθόνης αφής",
-
+  h_t: "176 cm (69,29 ίντσες)",
+  w_t: "194 cm (76,38 ίντσες)",
+  d_t: "157 cm (61,81 ίντσες)",
+  t_d: "8 ίντσες (αδιάβροχο)",
+  spt: "8<sup>-ίντσα</sup>",
   //footer
   stay_update: "Μείνετε ενημερωμένοι",
   stay_update_desc:
