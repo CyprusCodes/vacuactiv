@@ -5,7 +5,7 @@
 $("#form-submit").on("click", function (e) {
   let x = document.forms["contact-us"]["email"].value;
   var $formContact = $("#contact-us"),
-    url = "https://api.youth.com/"; //this has to be taken from a deployed google spread sheet
+    url = "https://script.google.com/macros/s/AKfycbx9wLY5vZDlucUXbXU-h5fxtwG6cV1IM7ZHoveoBcB_iNU4k_mkPdXA_DE8H6ldJYTcYg/exec"; //this has to be taken from a deployed google spread sheet
   var lang = window.localStorage.getItem("language");
   if (x == "") {
     if (lang === "ru") {
