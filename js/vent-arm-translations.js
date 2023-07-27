@@ -42,7 +42,16 @@ $.i18n = function (options) {
     //header
     mt: "A beautiful,subtle line that gives an amazing shape",
     mt_p: "When designing the Ventura armchair, we focused on the shape and form, which are created by carefully selected lines, giving it lightness and modernity. Thanks to the creative work of our designers, we combined the character of Vacu Activ devices, blending it delicately into the line of furniture, thanks to which we obtained an amazing visual effect.",
-    
+    fdt: "Fine details",
+    fdt_p: "<strong >For us, even the smallest detail is important in the design process, which is why we also focused on elements such as stitching on the upholstery.</strong > Embossing and stitching are inspired and refer to luxury sports cars. Thanks to these small details, we have obtained a great result, which also affects the comfort of using the chair.",
+    eys: "Enrich your space",
+    eys_p: "<strong >The Ventura armchair is a completely new look at design.</strong > Fresh and original form, perfectly fits into minimalist, modern spaces. Thanks to the Ventura armchair, each interior will acquire a modern character.",
+    drg: "Drag to rotate",
+    wdm: "Where design meets comfort",
+    wdm_p: "<strong >The Ventura armchair, designed by Vacu Activ, is not only a beautiful shape, it is also amazing comfort.</strong > In addition to the appearance, we adjusted the ergonomics of the chair to the body, maintaining the right angles for supporting the spine and the lumbar part to ensure the correct sitting position.",
+    dms: "Dimensions",
+    cta: "Counter A",
+
 
 
 
@@ -86,7 +95,17 @@ $.i18n = function (options) {
     faq_text_link: "Вопрос-Ответ",
     contact_text_link: "Контакт",
     //header
-    
+    mt: "Прекрасная, изысканная линия, которая создает удивительную форму",
+mt_p: "При создании кресла Ventura мы сосредоточились на его форме, которая создается тщательно подобранными линиями, делая его легким и современным. Благодаря креативной работе наших дизайнеров, мы сочетаем характер устройств Vacu Activ, изящно вливая его в линию мебели, что создает удивительный визуальный эффект.",
+fdt: "Точные детали",
+fdt_p: "<strong>Для нас важны даже мельчайшие детали в процессе дизайна, поэтому мы также обратили внимание на элементы, такие как строчка на обивке.</strong> Тиснение и строчка вдохновлены роскошными спортивными автомобилями. Благодаря этим маленьким деталям, мы получили отличный результат, который также влияет на комфорт использования стула.",
+eys: "Обогатите свое пространство",
+eys_p: "<strong>Кресло Ventura представляет собой совершенно новый взгляд на дизайн.</strong> Свежая и оригинальная форма отлично впишется в минималистские, современные пространства. Благодаря креслу Ventura, каждый интерьер приобретет современный характер.",
+drg: "Перетащите для вращения",
+wdm: "Когда дизайн встречается с комфортом",
+wdm_p: "<strong>Кресло Ventura, разработанное Vacu Activ, представляет не только прекрасную форму, но и потрясающий комфорт.</strong> Помимо внешнего вида, мы адаптировали эргономику кресла под контуры тела, сохраняя правильные углы для поддержки позвоночника и поясничной части, чтобы обеспечить правильное положение при сидении.",
+dms: "Размеры",
+cta: "Контр А",
     //footer
     stay_update: "Оставаться в курсе",
     stay_update_desc:
@@ -125,7 +144,17 @@ $.i18n = function (options) {
     faq_text_link: "FAQ",
     contact_text_link: "Επικοινωνία",
     //header
-    
+    mt: "Μια όμορφη, λεπτή γραμμή που δίνει μια εκπληκτική μορφή",
+mt_p: "Κατά τον σχεδιασμό της πολυθρόνας Ventura, επικεντρωθήκαμε στο σχήμα και τη μορφή, τα οποία δημιουργούνται από προσεκτικά επιλεγμένες γραμμές, προσδίδοντάς της ελαφρότητα και νεοτερισμό. Χάρη στο δημιουργικό έργο των σχεδιαστών μας, συνδυάσαμε το χαρακτήρα των συσκευών Vacu Activ, αναμειγνύοντάς τον διακριτά στη γραμμή του επίπλου, με το αποτέλεσμα της εξασφάλισης ενός εκπληκτικού οπτικού αποτελέσματος.",
+fdt: "Λεπτομέρειες",
+fdt_p: "<strong>Για εμάς, ακόμη και η παραμικρή λεπτομέρεια είναι σημαντική στη διαδικασία σχεδίασης, γι' αυτό επικεντρωθήκαμε επίσης στα στοιχεία όπως οι ραφές στην επένδυση.</strong> Οι χαρακτηριστικές χαράξεις και ραφές είναι εμπνευσμένες και αναφέρονται σε πολυτελή αυτοκίνητα αγωνιστικού τύπου. Χάρη σε αυτές τις μικρές λεπτομέρειες, πετύχαμε ένα εξαιρετικό αποτέλεσμα, το οποίο επηρεάζει επίσης την άνεση κατά τη χρήση της πολυθρόνας.",
+eys: "Εμπλουτίστε τον χώρο σας",
+eys_p: "<strong>Η πολυθρόνα Ventura είναι μια εντελώς νέα ματιά στον σχεδιασμό.</strong> Φρέσκο και πρωτότυπο σχήμα, ταιριάζει απόλυτα σε μινιμαλιστικούς, μοντέρνους χώρους. Χάρη στην πολυθρόνα Ventura, κάθε εσωτερικό θα αποκτήσει μια μοντέρνα χαρακτήρα.",
+drg: "Σύρετε για περιστροφή",
+wdm: "Εκεί όπου ο σχεδιασμός συναντά την άνεση",
+wdm_p: "<strong>Η πολυθρόνα Ventura, σχεδιασμένη από τη Vacu Activ, δεν είναι μόνο ένα όμορφο σχήμα, αλλά και εξαιρετική άνεση.</strong> Εκτός από την εμφάνιση, προσαρμόσαμε την εργονομία της πολυθρόνας στο σώμα, διατηρώντας τις σωστές γωνίες για την υποστήριξη της σπονδυλικής στήλης και του οσφυϊκού μέρους για να εξασφαλίσουμε τη σωστή καθιστική θέση.",
+dms: "Διαστάσεις",
+cta: "Αντίστροφη A",
     //footer
     stay_update: "Μείνετε ενημερωμένοι",
     stay_update_desc:

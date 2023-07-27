@@ -175,7 +175,10 @@ $.i18n.en = {
   adjustable_bike_resistance: "Adjustable bike resistance",
   under_pressure_range: "Under pressure range",
   touch_display_size: "Touch display size",
-
+  cllc: "Loss of cellulite",
+  ellc: "Eliminates cellulite<br /> <strong>up to 80%</strong>",
+  rbk: "Regular bike",
+  ys: "yes",
   //footer
   stay_update: "Stay updated",
   stay_update_desc:
@@ -352,7 +355,10 @@ $.i18n.ru = {
   adjustable_bike_resistance: "Регулируемое сопротивление велосипеда",
   under_pressure_range: "Диапазон негативного давления",
   touch_display_size: "Размер сенсорного дисплея",
-
+  cllc: "Потеря целлюлита",
+  ellc: "Устраняет целлюлит<br /> <strong>до 80%</strong>",
+  rbk: "Обычный велосипед",
+  ys: "да",
   //footer
   stay_update: "Оставаться в курсе",
   stay_update_desc:
@@ -530,7 +536,10 @@ $.i18n.gr = {
   adjustable_bike_resistance: "Ρυθμιζόμενη αντίσταση ποδηλάτου",
   under_pressure_range: "Εύρος αρνητικής πίεσης",
   touch_display_size: "Μέγεθος οθόνης αφής",
-
+  cllc: "Απώλεια κυτταρίτιδας",
+  ellc: "Εξαλείφει την κυτταρίτιδα<br /> <strong>έως και 80%</strong>",
+  rbk: "Κανονικό ποδήλατο",
+  ys: "ναι",
   //footer
   stay_update: "Μείνετε ενημερωμένοι",
   stay_update_desc:
