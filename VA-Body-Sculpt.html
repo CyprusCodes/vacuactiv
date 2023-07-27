@@ -328,7 +328,24 @@
     <link rel="stylesheet" href="/css/lazyload.css" />
 </head>
 
+<script>
+    window.addEventListener('load', function () {
+        // Set a delay of 100 milliseconds before fading out the black overlay
+        setTimeout(function () {
+            var blackOverlay = document.getElementById('black-overlay');
+            blackOverlay.style.transition = 'opacity 200ms'; // Add transition property for a smooth fade-out
+            blackOverlay.style.opacity = '0'; // Fade out the black overlay
+            document.body.style.overflow = 'visible'; // Restore scrollbars
+            // Optionally, you can remove the black overlay from the DOM after fading it out
+            setTimeout(function () {
+                blackOverlay.remove();
+            }, 200);
+        }, 100);
+    });
+</script>
+
 <body>
+    <div id="black-overlay"></div>
     <!-- Body Inner -->
     <div class="body-inner" style="background: #151516">
         <!-- Header -->
