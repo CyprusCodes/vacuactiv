@@ -5,8 +5,9 @@
 $("#form-submit").on("click", function (e) {
   let x = document.forms["contact-us"]["email"].value;
   var $formContact = $("#contact-us"),
-    url = "https://script.google.com/macros/s/AKfycbx9wLY5vZDlucUXbXU-h5fxtwG6cV1IM7ZHoveoBcB_iNU4k_mkPdXA_DE8H6ldJYTcYg/exec"; //this has to be taken from a deployed google spread sheet
-  var lang = window.localStorage.getItem("language");
+    url = "https://script.google.com/macros/s/AKfycbx9wLY5vZDlucUXbXU-h5fxtwG6cV1IM7ZHoveoBcB_iNU4k_mkPdXA_DE8H6ldJYTcYg/exec"
+  console.log($formContact['fullName']);
+
   if (x == "") {
     if (lang === "ru") {
       alert("Электронная почта должна быть заполнена");
@@ -113,6 +114,7 @@ $("#form-submit").on("click", function (e) {
         method: "GET",
         dataType: "json",
         data: $formContact.serializeArray(),
+        // data: { htmlBody: "ssssss"},
         success: function success(data) {
           $('button[type="submit"]').removeClass("clicked");
           $("#form-submit").html(
@@ -152,7 +154,8 @@ $("#form-submit").on("click", function (e) {
         )
       );
     }
-  }
+  } 
+  console.log($formContact, 'afterrrr');
   setTimeout(function () {
     $("#form-result2").css("display", "none");
   }, 3500);
