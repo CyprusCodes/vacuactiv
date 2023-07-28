@@ -328,7 +328,24 @@
     <link rel="stylesheet" href="/css/lazyload.css" />
 </head>
 
+<script>
+    window.addEventListener('load', function () {
+        // Set a delay of 100 milliseconds before fading out the black overlay
+        setTimeout(function () {
+            var blackOverlay = document.getElementById('black-overlay');
+            blackOverlay.style.transition = 'opacity 200ms'; // Add transition property for a smooth fade-out
+            blackOverlay.style.opacity = '0'; // Fade out the black overlay
+            document.body.style.overflow = 'visible'; // Restore scrollbars
+            // Optionally, you can remove the black overlay from the DOM after fading it out
+            setTimeout(function () {
+                blackOverlay.remove();
+            }, 200);
+        }, 100);
+    });
+</script>
+
 <body>
+    <div id="black-overlay"></div>
     <!-- Body Inner -->
     <div class="body-inner" style="background: #151516">
         <!-- Header -->
@@ -381,21 +398,9 @@
                                     <li>
                                         <a href="index.html" data-translate="about_text_link">About us</a>
                                     </li>
-                                    <!-- <li>
-                      <a href="index.html" data-translate="quote_text_link"
-                        >Get a quotes</a
-                      >
-                    </li>
-                    <li>
-                      <a href="index.html" data-translate="news_text_link"
-                        >News</a
-                      >
-                    </li>
-                    <li>
-                      <a href="index.html" data-translate="faq_text_link"
-                        >FAQ</a
-                      >
-                    </li> -->
+                                    <li>
+                                        <a href="get-quote.html" data-translate="quote_text_link">get quote</a>
+                                    </li>
                                     <li>
                                         <a href="#footer" data-translate="contact_text_link">Contact</a>
                                     </li>
@@ -493,7 +498,8 @@
                                                                         class="intrinsic-ignore fluidvids-item"
                                                                         style="opacity: 1;visibility: visible;width: 200%;/* height: 100%; */max-height: none;max-width: none;position: absolute;top: 0px;left: -84.7222%;display: block;"
                                                                         id="iframe66493" data-ready="true"
-                                                                        data-fluidvids="loaded"></iframe></div>
+                                                                        data-fluidvids="loaded"></iframe>
+                                                                </div>
                                                             </rs-bgvideo></rs-sbg-wrap></rs-sbg-px>
 
 
@@ -597,7 +603,8 @@
                                                                 <div
                                                                     class="wpb_text_column wpb_content_element  custom-heading-size-small text-white">
                                                                     <div class="wpb_wrapper ">
-                                                                        <h2 style="text-align: center;"><span
+                                                                        <h2 style="text-align: center;"
+                                                                            data-translate="ideal_treatment"><span
                                                                                 style="color: #dfc395;">VA Body
                                                                                 Sculpt</span> is the ideal treatment for
                                                                             those who dream of having a slim and fit
@@ -625,7 +632,8 @@
                                                                     class="qodef-section-title-holder custom-heading-size-small qodef-st-standard qodef-st-title-left qodef-st-normal-space ">
                                                                     <div class="qodef-st-inner">
                                                                         <h2 class="qodef-st-title"
-                                                                            style="color: #ffffff">
+                                                                            style="color: #ffffff"
+                                                                            data-translate="electromagnetic_tech">
                                                                             Advanced electromagnetic technology – HIFEM
                                                                         </h2>
                                                                     </div>
@@ -633,7 +641,8 @@
                                                                 <div
                                                                     class="wpb_text_column wpb_content_element  p-big text-white">
                                                                     <div class="wpb_wrapper">
-                                                                        <p style="font-size: 24px; line-height: 32px;">
+                                                                        <p style="font-size: 24px; line-height: 32px;"
+                                                                            data-translate="electromagnetic_tech_description">
                                                                             <strong>The device uses advanced
                                                                                 high-frequency electromagnetic
                                                                                 technology – HIFEM (High-Intensity
@@ -651,7 +660,8 @@
                                                                             same time to an extent that is not
                                                                             achievable in the same time with normal
                                                                             exercises. VA Body Sculpt builds muscles
-                                                                            faster than any other training.</p>
+                                                                            faster than any other training.
+                                                                        </p>
 
                                                                     </div>
                                                                 </div>
@@ -701,7 +711,8 @@
                                                                                     style="text-align: center">
                                                                                     <div class="qodef-st-inner">
                                                                                         <h2 class="qodef-st-title"
-                                                                                            style="color: #ffffff">
+                                                                                            style="color: #ffffff"
+                                                                                            data-translate="confirmed_effects">
                                                                                             Effects confirmed by<br>
                                                                                             numerous research results
                                                                                         </h2>
@@ -723,7 +734,8 @@
                                                                                 <div
                                                                                     class="wpb_text_column wpb_content_element  p-sbig">
                                                                                     <div class="wpb_wrapper">
-                                                                                        <p style="text-align: center;">
+                                                                                        <p style="text-align: center;"
+                                                                                            data-translate="changes_in_tissue">
                                                                                             Evidence of simultaneous
                                                                                             changes in human adipose
                                                                                             tissue and muscle tissue</p>
@@ -747,7 +759,8 @@
                                                                                     class="qodef-section-title-holder title-special-boxes title-border-top title-border-top-full font-32 qodef-st-standard qodef-st-title-left qodef-st-normal-space ">
                                                                                     <div class="qodef-st-inner">
                                                                                         <h2 class="qodef-st-title"
-                                                                                            style="color: #ffffff">
+                                                                                            style="color: #ffffff"
+                                                                                            data-translate="waist_volume">
                                                                                             Waist volume<br> reduction
                                                                                         </h2>
                                                                                     </div>
@@ -772,7 +785,8 @@
                                                                                     class="qodef-section-title-holder title-special-boxes title-border-top title-border-top-full font-32 qodef-st-standard qodef-st-title-left qodef-st-normal-space ">
                                                                                     <div class="qodef-st-inner">
                                                                                         <h2 class="qodef-st-title"
-                                                                                            style="color: #ffffff">
+                                                                                            style="color: #ffffff"
+                                                                                            data-translate="body_fat">
                                                                                             Average<br> reduction of
                                                                                             body fat </h2>
                                                                                     </div>
@@ -797,7 +811,8 @@
                                                                                     class="qodef-section-title-holder title-special-boxes title-border-top title-border-top-full font-32 qodef-st-standard qodef-st-title-left qodef-st-normal-space ">
                                                                                     <div class="qodef-st-inner">
                                                                                         <h2 class="qodef-st-title"
-                                                                                            style="color: #ffffff">
+                                                                                            style="color: #ffffff"
+                                                                                            data-translate="muscle_mass_increase">
                                                                                             Average<br> increase in
                                                                                             muscle mass </h2>
                                                                                     </div>
@@ -832,7 +847,8 @@
                                                                 <div
                                                                     class="wpb_text_column wpb_content_element  custom-heading-size-small text-white">
                                                                     <div class="wpb_wrapper">
-                                                                        <h2>Reduction of <span class="text-gold">body
+                                                                        <h2 data-translate="fat_down_muscle_up">
+                                                                            Reduction of <span class="text-gold">body
                                                                                 fat</span> and build-up of <span
                                                                                 class="text-gold">muscle mass</span>
                                                                         </h2>
@@ -843,7 +859,8 @@
                                                                 <div
                                                                     class="wpb_text_column wpb_content_element  p-big text-white">
                                                                     <div class="wpb_wrapper">
-                                                                        <p style="font-size: 24px; line-height: 32px;">
+                                                                        <p style="font-size: 24px; line-height: 32px;"
+                                                                            data-translate="muscle_fat_description">
                                                                             <strong>Heavy effort of a particular muscle
                                                                                 causes an increase in the metabolism of
                                                                                 the surrounding fatty tissue which
@@ -859,7 +876,8 @@
                                                                             treatments with VA Body Sculpt can be done
                                                                             even every other day. Of course, you need to
                                                                             wait for the muscle build-up effect up to 4
-                                                                            weeks after a minimum of 4 treatments.</p>
+                                                                            weeks after a minimum of 4 treatments.
+                                                                        </p>
 
                                                                     </div>
                                                                 </div>
@@ -900,7 +918,8 @@
                                                                                     class="qodef-section-title-holder title-border-top p-big text-normal qodef-st-standard qodef-st-title-left qodef-st-normal-space ">
                                                                                     <div class="qodef-st-inner">
                                                                                         <h2 class="qodef-st-title"
-                                                                                            style="color: #ffffff">
+                                                                                            style="color: #ffffff"
+                                                                                            data-translate="muscle_contraction">
                                                                                             VA Body Sculpt with HIFEM
                                                                                             induces approximately 20,000
                                                                                             muscle contractions per
@@ -918,7 +937,8 @@
                                                                                     class="qodef-section-title-holder title-border-top p-big text-normal qodef-st-standard qodef-st-title-left qodef-st-normal-space ">
                                                                                     <div class="qodef-st-inner">
                                                                                         <h2 class="qodef-st-title"
-                                                                                            style="color: #ffffff">
+                                                                                            style="color: #ffffff"
+                                                                                            data-translate="supramaximal">
                                                                                             Induced contractions, known
                                                                                             as supramaximal
                                                                                             contractions, cannot be
@@ -972,15 +992,16 @@
                                                                     style="text-align: center">
                                                                     <div class="qodef-st-inner">
                                                                         <h2 class="qodef-st-title"
-                                                                            style="color: #ffffff">
+                                                                            style="color: #ffffff"
+                                                                            data-translate="two_in_one">
                                                                             Two benefits, one<br> treatment </h2>
                                                                     </div>
                                                                 </div>
                                                                 <div
                                                                     class="wpb_text_column wpb_content_element  font-42 text-gold">
                                                                     <div class="wpb_wrapper">
-                                                                        <p
-                                                                            style="text-align: center; color: #dfc395 !important; font-size: 56px; font-weight: 500;">
+                                                                        <p style="text-align: center; color: #dfc395 !important; font-size: 56px; font-weight: 500;"
+                                                                            data-translate="approximate_contractions">
                                                                             <strong>approximately <span
                                                                                     class="text-white"
                                                                                     style="color: #fff !important;">20,000</span>
@@ -1032,7 +1053,8 @@
                                                                     style="text-align: center">
                                                                     <div class="qodef-st-inner">
                                                                         <h2 class="qodef-st-title"
-                                                                            style="color: #ffffff">
+                                                                            style="color: #ffffff"
+                                                                            data-translate="not_all_about_the_fat">
                                                                             Because it’s not only<br> about the fat...
                                                                         </h2>
                                                                     </div>
@@ -1092,8 +1114,8 @@
                                                                                 <div
                                                                                     class="wpb_text_column wpb_content_element  text-white p-big">
                                                                                     <div class="wpb_wrapper">
-                                                                                        <p
-                                                                                            style="font-size: 24px; line-height: 32px;">
+                                                                                        <p style="font-size: 24px; line-height: 32px;"
+                                                                                            data-translate="voluntary_contractions">
                                                                                             Voluntary contractions can
                                                                                             increase the demand for
                                                                                             energy from fat cells. The
@@ -1141,8 +1163,8 @@
                                                                                 <div
                                                                                     class="wpb_text_column wpb_content_element  text-white p-big">
                                                                                     <div class="wpb_wrapper">
-                                                                                        <p
-                                                                                            style="font-size: 24px; line-height: 32px;">
+                                                                                        <p style="font-size: 24px; line-height: 32px;"
+                                                                                            data-translate="intense_supramaximal">
                                                                                             Intense supramaximal
                                                                                             contractions increase the
                                                                                             production of epinephrine,
@@ -1192,8 +1214,8 @@
                                                                                 <div
                                                                                     class="wpb_text_column wpb_content_element  text-white p-big">
                                                                                     <div class="wpb_wrapper">
-                                                                                        <p
-                                                                                            style="font-size: 24px; line-height: 32px;">
+                                                                                        <p style="font-size: 24px; line-height: 32px;"
+                                                                                            data-translate="excessive_flow">
                                                                                             Excessive flow of free fatty
                                                                                             acids causes cell
                                                                                             dysfunction and induction of
@@ -1225,7 +1247,8 @@
                                                                 <div
                                                                     class="wpb_text_column wpb_content_element  custom-heading-size text-white">
                                                                     <div class="wpb_wrapper">
-                                                                        <h2 style="text-align: center;"><span
+                                                                        <h2 style="text-align: center;"
+                                                                            data-translate="body_made_up"><span
                                                                                 class="text-gold">30%</span> to <span
                                                                                 class="text-gold">40%</span> of the<br>
                                                                             body is made of<br>
@@ -1237,7 +1260,8 @@
                                                                 <div
                                                                     class="wpb_text_column wpb_content_element  p-big text-white">
                                                                     <div class="wpb_wrapper">
-                                                                        <p style="font-size: 24px; line-height: 32px;">
+                                                                        <p style="font-size: 24px; line-height: 32px;"
+                                                                            data-translate="not_achievable_through">
                                                                             VA Body Sculpt with HIFEM technology induces
                                                                             supramaximal muscle contractions that are
                                                                             not achievable through voluntary activity.
@@ -1271,7 +1295,8 @@
                                                                     class="qodef-section-title-holder title-border-top title-border-top-full p-big qodef-st-standard qodef-st-title-left qodef-st-normal-space ">
                                                                     <div class="qodef-st-inner">
                                                                         <h2 class="qodef-st-title"
-                                                                            style="color: #ffffff">
+                                                                            style="color: #ffffff"
+                                                                            data-translate="before">
                                                                             Before </h2>
                                                                     </div>
                                                                 </div>
@@ -1303,7 +1328,8 @@
                                                                     class="qodef-section-title-holder title-border-top title-border-top-full p-big qodef-st-standard qodef-st-title-left qodef-st-normal-space ">
                                                                     <div class="qodef-st-inner">
                                                                         <h2 class="qodef-st-title"
-                                                                            style="color: #ffffff">
+                                                                            style="color: #ffffff"
+                                                                            data-translate="after">
                                                                             After </h2>
                                                                     </div>
                                                                 </div>
@@ -1342,7 +1368,8 @@
                                                                     class="qodef-section-title-holder font-42 qodef-st-standard qodef-st-title-left qodef-st-normal-space qodef-st-disable-title-break">
                                                                     <div class="qodef-st-inner">
                                                                         <h2 class="qodef-st-title"
-                                                                            style="color: #ffffff">
+                                                                            style="color: #ffffff"
+                                                                            data-translate="after_application">
                                                                             Effects after application<br> VA Body Sculpt
                                                                         </h2>
                                                                     </div>
@@ -2220,7 +2247,8 @@
                                                                 <div
                                                                     class="wpb_text_column wpb_content_element  font-42 text-white">
                                                                     <div class="wpb_wrapper">
-                                                                        <h2>The device, as one of the few on the<br>
+                                                                        <h2 data-translate="unique_device">The device,
+                                                                            as one of the few on the<br>
                                                                             market, has <span
                                                                                 class="text-underline text-gold">four RF
                                                                                 applicators</span> and a<br>
@@ -2268,9 +2296,12 @@
                                                                                 <div
                                                                                     class="wpb_text_column wpb_content_element  text-white font-32">
                                                                                     <div class="wpb_wrapper">
-                                                                                        <p><strong
+                                                                                        <p
+                                                                                            data-translate="large_applicators">
+                                                                                            <strong
                                                                                                 style="font-size: 32px;">Large
-                                                                                                applicators</strong></p>
+                                                                                                applicators</strong>
+                                                                                        </p>
 
                                                                                     </div>
                                                                                 </div>
@@ -2278,7 +2309,8 @@
                                                                                     class="qodef-section-title-holder title-border-top title-border-top-full p-big title-border-top-no-margin qodef-st-standard qodef-st-title-left qodef-st-normal-space ">
                                                                                     <div class="qodef-st-inner">
                                                                                         <h2 class="qodef-st-title"
-                                                                                            style="color: #ffffff">
+                                                                                            style="color: #ffffff"
+                                                                                            data-translate="waist_and_belly">
                                                                                             For waist<br> and belly
                                                                                             treatments and buttocks
                                                                                         </h2>
@@ -2323,9 +2355,12 @@
                                                                                 <div
                                                                                     class="wpb_text_column wpb_content_element  text-white font-32">
                                                                                     <div class="wpb_wrapper">
-                                                                                        <p><strong
+                                                                                        <p
+                                                                                            data-translate="small_applicators">
+                                                                                            <strong
                                                                                                 style="font-size: 32px;">Small
-                                                                                                applicators</strong></p>
+                                                                                                applicators</strong>
+                                                                                        </p>
 
                                                                                     </div>
                                                                                 </div>
@@ -2333,7 +2368,8 @@
                                                                                     class="qodef-section-title-holder title-border-top title-border-top-full p-big title-border-top-no-margin qodef-st-standard qodef-st-title-left qodef-st-normal-space ">
                                                                                     <div class="qodef-st-inner">
                                                                                         <h2 class="qodef-st-title"
-                                                                                            style="color: #ffffff">
+                                                                                            style="color: #ffffff"
+                                                                                            data-translate="biceps_and_triceps">
                                                                                             For use<br> on biceps,
                                                                                             triceps and calves </h2>
                                                                                     </div>
@@ -2361,9 +2397,12 @@
                                                                                 <div
                                                                                     class="wpb_text_column wpb_content_element  text-white font-32">
                                                                                     <div class="wpb_wrapper">
-                                                                                        <p><strong
+                                                                                        <p
+                                                                                            data-translate="pelvic_applicator">
+                                                                                            <strong
                                                                                                 style="font-size: 32px;">Pelvic
-                                                                                                applicator</strong></p>
+                                                                                                applicator</strong>
+                                                                                        </p>
 
                                                                                     </div>
                                                                                 </div>
@@ -2371,7 +2410,8 @@
                                                                                     class="qodef-section-title-holder title-border-top title-border-top-full p-big title-border-top-no-margin qodef-st-standard qodef-st-title-left qodef-st-normal-space ">
                                                                                     <div class="qodef-st-inner">
                                                                                         <h2 class="qodef-st-title"
-                                                                                            style="color: #ffffff">
+                                                                                            style="color: #ffffff"
+                                                                                            data-translate="hip_and_thighs">
                                                                                             For use<br> on the hip and
                                                                                             thighs </h2>
                                                                                     </div>
@@ -2441,7 +2481,8 @@
                                                                                 <div
                                                                                     class="wpb_text_column wpb_content_element  custom-heading-size-small text-white">
                                                                                     <div class="wpb_wrapper">
-                                                                                        <h2 style="text-align: center;">
+                                                                                        <h2 style="text-align: center;"
+                                                                                            data-translate="radio_frequency">
                                                                                             <span
                                                                                                 class="text-underline text-blue">Radio
                                                                                                 Frequency</span> pads
@@ -2456,8 +2497,8 @@
                                                                                 <div
                                                                                     class="wpb_text_column wpb_content_element  font-32 text-white">
                                                                                     <div class="wpb_wrapper">
-                                                                                        <p
-                                                                                            style="text-align: center; font-size: 24px; line-height: 32px;">
+                                                                                        <p style="text-align: center; font-size: 24px; line-height: 32px;"
+                                                                                            data-translate="rf_method">
                                                                                             <strong>RF is a nonsurgical
                                                                                                 method of tightening
                                                                                                 your skin. The procedure
@@ -2528,7 +2569,8 @@
                                                                     style="text-align: left">
                                                                     <div class="qodef-st-inner">
                                                                         <h2 class="qodef-st-title"
-                                                                            style="color: #ffffff">
+                                                                            style="color: #ffffff"
+                                                                            data-translate="ideal_treatment_slim_fit">
                                                                             The ideal treatment for those who dream of
                                                                             having a slim and fit figure. </h2>
                                                                     </div>
@@ -2538,7 +2580,8 @@
                                                                 <div
                                                                     class="wpb_text_column wpb_content_element  p-big text-white">
                                                                     <div class="wpb_wrapper">
-                                                                        <p style="font-size: 24px; line-height: 32px;">
+                                                                        <p style="font-size: 24px; line-height: 32px;"
+                                                                            data-translate="pure_relaxation">
                                                                             Workout with VA Body Sculpt is pure
                                                                             relaxation, as you simply lie comfortably on
                                                                             the treatment bed while the device does the
@@ -2628,8 +2671,8 @@
                                                                                                 class="qodef-content-slider-item-content-table-cell">
                                                                                                 <div
                                                                                                     class="qodef-content-slider-item-content-inner">
-                                                                                                    <div
-                                                                                                        class="qodef-content-slider-udx-left">
+                                                                                                    <div class="qodef-content-slider-udx-left"
+                                                                                                        data-translate="achievements">
                                                                                                         Thanks to VA
                                                                                                         Body
                                                                                                         Sculpt
@@ -2638,9 +2681,13 @@
                                                                                                     </div>
                                                                                                     <div
                                                                                                         class="qodef-content-slider-udx-right">
-                                                                                                        <h2>Belly</h2>
+                                                                                                        <h2
+                                                                                                            data-translate="belly">
+                                                                                                            Belly</h2>
                                                                                                         <ul>
-                                                                                                            <li>Visibility
+                                                                                                            <li
+                                                                                                                data-translate="abdominal_visibility">
+                                                                                                                Visibility
                                                                                                                 of the
                                                                                                                 abdominal
                                                                                                                 shape by
@@ -2652,7 +2699,9 @@
                                                                                                                 loss of
                                                                                                                 subcutaneous
                                                                                                                 fat</li>
-                                                                                                            <li>Firming
+                                                                                                            <li
+                                                                                                                data-translate="firming_and_tightening">
+                                                                                                                Firming
                                                                                                                 and
                                                                                                                 tightening
                                                                                                                 of
@@ -2660,7 +2709,9 @@
                                                                                                                 abdominal
                                                                                                                 skin
                                                                                                             </li>
-                                                                                                            <li>Fat
+                                                                                                            <li
+                                                                                                                data-translate="abdomen_and_waist_reduce">
+                                                                                                                Fat
                                                                                                                 reduction
                                                                                                                 in the
                                                                                                                 abdomen
@@ -2668,10 +2719,14 @@
                                                                                                                 waist
                                                                                                                 area
                                                                                                             </li>
-                                                                                                            <li>Waist
+                                                                                                            <li
+                                                                                                                data-translate="waist_slimming">
+                                                                                                                Waist
                                                                                                                 slimming
                                                                                                             </li>
-                                                                                                            <li>Strengthening
+                                                                                                            <li
+                                                                                                                data-translate="after_childbirth">
+                                                                                                                Strengthening
                                                                                                                 of the
                                                                                                                 abdominal
                                                                                                                 muscles
@@ -2686,7 +2741,9 @@
                                                                                                                 rectus
                                                                                                                 muscles
                                                                                                             </li>
-                                                                                                            <li>Improvement
+                                                                                                            <li
+                                                                                                                data-translate="after_lipo_improvement">
+                                                                                                                Improvement
                                                                                                                 of the
                                                                                                                 appearance
                                                                                                                 of the
@@ -2729,8 +2786,8 @@
                                                                                                 class="qodef-content-slider-item-content-table-cell">
                                                                                                 <div
                                                                                                     class="qodef-content-slider-item-content-inner">
-                                                                                                    <div
-                                                                                                        class="qodef-content-slider-udx-left">
+                                                                                                    <div class="qodef-content-slider-udx-left"
+                                                                                                        data-translate="achievements">
                                                                                                         Thanks to VA
                                                                                                         Body
                                                                                                         Sculpt
@@ -2739,10 +2796,14 @@
                                                                                                     </div>
                                                                                                     <div
                                                                                                         class="qodef-content-slider-udx-right">
-                                                                                                        <h2>Arms and
+                                                                                                        <h2
+                                                                                                            data-translate="arms_and_calves">
+                                                                                                            Arms and
                                                                                                             calves</h2>
                                                                                                         <ul>
-                                                                                                            <li>In men,
+                                                                                                            <li
+                                                                                                                data-translate="desired_effect">
+                                                                                                                In men,
                                                                                                                 VA Body
                                                                                                                 Sculpt
                                                                                                                 gives
@@ -2755,7 +2816,9 @@
                                                                                                                 strong
                                                                                                                 arms.
                                                                                                             </li>
-                                                                                                            <li>in
+                                                                                                            <li
+                                                                                                                data-translate="arms_defined_shape">
+                                                                                                                in
                                                                                                                 women,
                                                                                                                 after
                                                                                                                 the
@@ -2775,7 +2838,9 @@
                                                                                                                 is
                                                                                                                 reduced
                                                                                                             </li>
-                                                                                                            <li>the arms
+                                                                                                            <li
+                                                                                                                data-translate="slender_look">
+                                                                                                                the arms
                                                                                                                 look
                                                                                                                 slender,
                                                                                                                 with the
@@ -2784,7 +2849,9 @@
                                                                                                                 muscles
                                                                                                                 marked
                                                                                                             </li>
-                                                                                                            <li>Skin
+                                                                                                            <li
+                                                                                                                data-translate="flaccidity_reduction">
+                                                                                                                Skin
                                                                                                                 tightening,
                                                                                                                 reduction
                                                                                                                 of
@@ -2798,7 +2865,9 @@
                                                                                                                 brachial
                                                                                                                 triceps
                                                                                                             </li>
-                                                                                                            <li>the
+                                                                                                            <li
+                                                                                                                data-translate="strengthen_calf_triceps">
+                                                                                                                the
                                                                                                                 applicator
                                                                                                                 working
                                                                                                                 on calf
@@ -2843,8 +2912,8 @@
                                                                                                 class="qodef-content-slider-item-content-table-cell">
                                                                                                 <div
                                                                                                     class="qodef-content-slider-item-content-inner">
-                                                                                                    <div
-                                                                                                        class="qodef-content-slider-udx-left">
+                                                                                                    <div class="qodef-content-slider-udx-left"
+                                                                                                        data-translate="achievements">
                                                                                                         Thanks to VA
                                                                                                         Body
                                                                                                         Sculpt
@@ -2853,10 +2922,14 @@
                                                                                                     </div>
                                                                                                     <div
                                                                                                         class="qodef-content-slider-udx-right">
-                                                                                                        <h2>Buttocks
+                                                                                                        <h2
+                                                                                                            data-translate="buttocks">
+                                                                                                            Buttocks
                                                                                                         </h2>
                                                                                                         <ul>
-                                                                                                            <li>Non-invasive
+                                                                                                            <li
+                                                                                                                data-translate="non_invasive_lift">
+                                                                                                                Non-invasive
                                                                                                                 buttock
                                                                                                                 lift,
                                                                                                                 meaning
@@ -2866,7 +2939,9 @@
                                                                                                                 a
                                                                                                                 scalpel
                                                                                                             </li>
-                                                                                                            <li>Firming
+                                                                                                            <li
+                                                                                                                data-translate="without_injection">
+                                                                                                                Firming
                                                                                                                 of the
                                                                                                                 buttocks
                                                                                                                 without
@@ -2874,7 +2949,9 @@
                                                                                                                 or
                                                                                                                 convalescence
                                                                                                             </li>
-                                                                                                            <li>Reduction
+                                                                                                            <li
+                                                                                                                data-translate="transformation_fat_into_muscle">
+                                                                                                                Reduction
                                                                                                                 of fat
                                                                                                                 tissue
                                                                                                                 with
@@ -2884,7 +2961,9 @@
                                                                                                                 into
                                                                                                                 muscle
                                                                                                             </li>
-                                                                                                            <li>Enlargement
+                                                                                                            <li
+                                                                                                                data-translate="modelling_of_buttocks">
+                                                                                                                Enlargement
                                                                                                                 and
                                                                                                                 modelling
                                                                                                                 of the
@@ -2894,12 +2973,16 @@
                                                                                                                 Brazilian
                                                                                                                 buttocks
                                                                                                             </li>
-                                                                                                            <li>Strengthening
+                                                                                                            <li
+                                                                                                                data-translate="strengthening_buttocks">
+                                                                                                                Strengthening
                                                                                                                 the
                                                                                                                 buttocks
                                                                                                                 muscles
                                                                                                             </li>
-                                                                                                            <li>Improvement
+                                                                                                            <li
+                                                                                                                data-translate="sculpture_of_buttocks">
+                                                                                                                Improvement
                                                                                                                 of
                                                                                                                 liposuction
                                                                                                                 effects
@@ -2911,7 +2994,9 @@
                                                                                                                 buttocks
                                                                                                                 muscles
                                                                                                             </li>
-                                                                                                            <li>Improvement
+                                                                                                            <li
+                                                                                                                data-translate="improved_effects_for_athletes">
+                                                                                                                Improvement
                                                                                                                 of
                                                                                                                 effects
                                                                                                                 for
@@ -2950,8 +3035,8 @@
                                                                                                 class="qodef-content-slider-item-content-table-cell">
                                                                                                 <div
                                                                                                     class="qodef-content-slider-item-content-inner">
-                                                                                                    <div
-                                                                                                        class="qodef-content-slider-udx-left">
+                                                                                                    <div class="qodef-content-slider-udx-left"
+                                                                                                        data-translate="achievements">
                                                                                                         Thanks to VA
                                                                                                         Body
                                                                                                         Sculpt
@@ -2960,9 +3045,13 @@
                                                                                                     </div>
                                                                                                     <div
                                                                                                         class="qodef-content-slider-udx-right">
-                                                                                                        <h2>Belly</h2>
+                                                                                                        <h2
+                                                                                                            data-translate="belly">
+                                                                                                            Belly</h2>
                                                                                                         <ul>
-                                                                                                            <li>Visibility
+                                                                                                            <li
+                                                                                                                data-translate="visibility_of_shape">
+                                                                                                                Visibility
                                                                                                                 of the
                                                                                                                 abdominal
                                                                                                                 shape by
@@ -2974,7 +3063,9 @@
                                                                                                                 loss of
                                                                                                                 subcutaneous
                                                                                                                 fat</li>
-                                                                                                            <li>Firming
+                                                                                                            <li
+                                                                                                                data-translate="firming_of_flabby">
+                                                                                                                Firming
                                                                                                                 and
                                                                                                                 tightening
                                                                                                                 of
@@ -2982,7 +3073,9 @@
                                                                                                                 abdominal
                                                                                                                 skin
                                                                                                             </li>
-                                                                                                            <li>Fat
+                                                                                                            <li
+                                                                                                                data-translate="fat_reduction_abdomen">
+                                                                                                                Fat
                                                                                                                 reduction
                                                                                                                 in the
                                                                                                                 abdomen
@@ -2990,10 +3083,14 @@
                                                                                                                 waist
                                                                                                                 area
                                                                                                             </li>
-                                                                                                            <li>Waist
+                                                                                                            <li
+                                                                                                                data-translate="waist_slimming_shady">
+                                                                                                                Waist
                                                                                                                 slimming
                                                                                                             </li>
-                                                                                                            <li>Strengthening
+                                                                                                            <li
+                                                                                                                data-translate="strengthening_after_childbirth">
+                                                                                                                Strengthening
                                                                                                                 of the
                                                                                                                 abdominal
                                                                                                                 muscles
@@ -3008,7 +3105,9 @@
                                                                                                                 rectus
                                                                                                                 muscles
                                                                                                             </li>
-                                                                                                            <li>Improvement
+                                                                                                            <li
+                                                                                                                data-translate="improvement_after_lipo">
+                                                                                                                Improvement
                                                                                                                 of the
                                                                                                                 appearance
                                                                                                                 of the
@@ -3051,8 +3150,8 @@
                                                                                                 class="qodef-content-slider-item-content-table-cell">
                                                                                                 <div
                                                                                                     class="qodef-content-slider-item-content-inner">
-                                                                                                    <div
-                                                                                                        class="qodef-content-slider-udx-left">
+                                                                                                    <div class="qodef-content-slider-udx-left"
+                                                                                                        data-translate="achievements">
                                                                                                         Thanks to VA
                                                                                                         Body
                                                                                                         Sculpt
@@ -3061,10 +3160,14 @@
                                                                                                     </div>
                                                                                                     <div
                                                                                                         class="qodef-content-slider-udx-right">
-                                                                                                        <h2>Arms and
+                                                                                                        <h2
+                                                                                                            data-translate="">
+                                                                                                            Arms and
                                                                                                             calves</h2>
                                                                                                         <ul>
-                                                                                                            <li>In men,
+                                                                                                            <li
+                                                                                                                data-translate="">
+                                                                                                                In men,
                                                                                                                 VA Body
                                                                                                                 Sculpt
                                                                                                                 gives
@@ -3077,7 +3180,9 @@
                                                                                                                 strong
                                                                                                                 arms.
                                                                                                             </li>
-                                                                                                            <li>in
+                                                                                                            <li
+                                                                                                                data-translate="">
+                                                                                                                in
                                                                                                                 women,
                                                                                                                 after
                                                                                                                 the
@@ -3097,7 +3202,9 @@
                                                                                                                 is
                                                                                                                 reduced
                                                                                                             </li>
-                                                                                                            <li>the arms
+                                                                                                            <li
+                                                                                                                data-translate="">
+                                                                                                                the arms
                                                                                                                 look
                                                                                                                 slender,
                                                                                                                 with the
@@ -3106,7 +3213,9 @@
                                                                                                                 muscles
                                                                                                                 marked
                                                                                                             </li>
-                                                                                                            <li>Skin
+                                                                                                            <li
+                                                                                                                data-translate="">
+                                                                                                                Skin
                                                                                                                 tightening,
                                                                                                                 reduction
                                                                                                                 of
@@ -3120,7 +3229,9 @@
                                                                                                                 brachial
                                                                                                                 triceps
                                                                                                             </li>
-                                                                                                            <li>the
+                                                                                                            <li
+                                                                                                                data-translate="">
+                                                                                                                the
                                                                                                                 applicator
                                                                                                                 working
                                                                                                                 on calf
@@ -3166,8 +3277,8 @@
                                                                                                 class="qodef-content-slider-item-content-table-cell">
                                                                                                 <div
                                                                                                     class="qodef-content-slider-item-content-inner">
-                                                                                                    <div
-                                                                                                        class="qodef-content-slider-udx-left">
+                                                                                                    <div class="qodef-content-slider-udx-left"
+                                                                                                        data-translate="achievements">
                                                                                                         Thanks to VA
                                                                                                         Body
                                                                                                         Sculpt
@@ -3176,10 +3287,14 @@
                                                                                                     </div>
                                                                                                     <div
                                                                                                         class="qodef-content-slider-udx-right">
-                                                                                                        <h2>Buttocks
+                                                                                                        <h2
+                                                                                                            data-translate="">
+                                                                                                            Buttocks
                                                                                                         </h2>
                                                                                                         <ul>
-                                                                                                            <li>Non-invasive
+                                                                                                            <li
+                                                                                                                data-translate="non_invasive_lift">
+                                                                                                                Non-invasive
                                                                                                                 buttock
                                                                                                                 lift,
                                                                                                                 meaning
@@ -3189,7 +3304,9 @@
                                                                                                                 a
                                                                                                                 scalpel
                                                                                                             </li>
-                                                                                                            <li>Firming
+                                                                                                            <li
+                                                                                                                data-translate="without_injection">
+                                                                                                                Firming
                                                                                                                 of the
                                                                                                                 buttocks
                                                                                                                 without
@@ -3197,7 +3314,9 @@
                                                                                                                 or
                                                                                                                 convalescence
                                                                                                             </li>
-                                                                                                            <li>Reduction
+                                                                                                            <li
+                                                                                                                data-translate="transformation_fat_into_muscle">
+                                                                                                                Reduction
                                                                                                                 of fat
                                                                                                                 tissue
                                                                                                                 with
@@ -3207,7 +3326,9 @@
                                                                                                                 into
                                                                                                                 muscle
                                                                                                             </li>
-                                                                                                            <li>Enlargement
+                                                                                                            <li
+                                                                                                                data-translate="modelling_of_buttocks">
+                                                                                                                Enlargement
                                                                                                                 and
                                                                                                                 modelling
                                                                                                                 of the
@@ -3217,12 +3338,16 @@
                                                                                                                 Brazilian
                                                                                                                 buttocks
                                                                                                             </li>
-                                                                                                            <li>Strengthening
+                                                                                                            <li
+                                                                                                                data-translate="strengthening_buttocks">
+                                                                                                                Strengthening
                                                                                                                 the
                                                                                                                 buttocks
                                                                                                                 muscles
                                                                                                             </li>
-                                                                                                            <li>Improvement
+                                                                                                            <li
+                                                                                                                data-translate="sculpture_of_buttocks">
+                                                                                                                Improvement
                                                                                                                 of
                                                                                                                 liposuction
                                                                                                                 effects
@@ -3234,7 +3359,9 @@
                                                                                                                 buttocks
                                                                                                                 muscles
                                                                                                             </li>
-                                                                                                            <li>Improvement
+                                                                                                            <li
+                                                                                                                data-translate="improved_effects_for_athletes">
+                                                                                                                Improvement
                                                                                                                 of
                                                                                                                 effects
                                                                                                                 for
@@ -3274,8 +3401,8 @@
                                                                                                 class="qodef-content-slider-item-content-table-cell">
                                                                                                 <div
                                                                                                     class="qodef-content-slider-item-content-inner">
-                                                                                                    <div
-                                                                                                        class="qodef-content-slider-udx-left">
+                                                                                                    <div class="qodef-content-slider-udx-left"
+                                                                                                        data-translate="achievements">
                                                                                                         Thanks to VA
                                                                                                         Body
                                                                                                         Sculpt
@@ -3284,9 +3411,13 @@
                                                                                                     </div>
                                                                                                     <div
                                                                                                         class="qodef-content-slider-udx-right">
-                                                                                                        <h2>Belly</h2>
+                                                                                                        <h2
+                                                                                                            data-translate="belly">
+                                                                                                            Belly</h2>
                                                                                                         <ul>
-                                                                                                            <li>Visibility
+                                                                                                            <li
+                                                                                                                data-translate="visibility_of_shape">
+                                                                                                                Visibility
                                                                                                                 of the
                                                                                                                 abdominal
                                                                                                                 shape by
@@ -3298,7 +3429,9 @@
                                                                                                                 loss of
                                                                                                                 subcutaneous
                                                                                                                 fat</li>
-                                                                                                            <li>Firming
+                                                                                                            <li
+                                                                                                                data-translate="firming_of_flabby">
+                                                                                                                Firming
                                                                                                                 and
                                                                                                                 tightening
                                                                                                                 of
@@ -3306,7 +3439,9 @@
                                                                                                                 abdominal
                                                                                                                 skin
                                                                                                             </li>
-                                                                                                            <li>Fat
+                                                                                                            <li
+                                                                                                                data-translate="fat_reduction_abdomen">
+                                                                                                                Fat
                                                                                                                 reduction
                                                                                                                 in the
                                                                                                                 abdomen
@@ -3314,10 +3449,14 @@
                                                                                                                 waist
                                                                                                                 area
                                                                                                             </li>
-                                                                                                            <li>Waist
+                                                                                                            <li
+                                                                                                                data-translate="waist_slimming_shady">
+                                                                                                                Waist
                                                                                                                 slimming
                                                                                                             </li>
-                                                                                                            <li>Strengthening
+                                                                                                            <li
+                                                                                                                data-translate="strengthening_after_childbirth">
+                                                                                                                Strengthening
                                                                                                                 of the
                                                                                                                 abdominal
                                                                                                                 muscles
@@ -3332,7 +3471,9 @@
                                                                                                                 rectus
                                                                                                                 muscles
                                                                                                             </li>
-                                                                                                            <li>Improvement
+                                                                                                            <li
+                                                                                                                data-translate="improvement_after_lipo">
+                                                                                                                Improvement
                                                                                                                 of the
                                                                                                                 appearance
                                                                                                                 of the
@@ -3407,7 +3548,8 @@
                                                                     style="text-align: left">
                                                                     <div class="qodef-st-inner">
                                                                         <h2 class="qodef-st-title"
-                                                                            style="color: #ffffff">
+                                                                            style="color: #ffffff"
+                                                                            data-translate="clinic_advantages">
                                                                             Clinic advantages </h2>
                                                                     </div>
                                                                 </div>
@@ -3416,16 +3558,22 @@
                                                                 <div class="wpb_text_column wpb_content_element  p-big">
                                                                     <div class="wpb_wrapper">
                                                                         <ul class="list-line">
-                                                                            <li>Offer your clients the latest in cutting
+                                                                            <li data-translate="contouring_treatment">
+                                                                                Offer your clients the latest in cutting
                                                                                 edge body contouring treatment
                                                                                 technology.</li>
-                                                                            <li>Just turn on and let the system do the
+                                                                            <li data-translate="let_it_work">Just turn
+                                                                                on and let the system do the
                                                                                 work for you.</li>
-                                                                            <li>Simple and easy to use operation.</li>
-                                                                            <li>Zero consumables.</li>
-                                                                            <li>Non-invasive, no downtime, no side
+                                                                            <li data-translate="simple_and_easy">Simple
+                                                                                and easy to use operation.</li>
+                                                                            <li data-translate="zero_consumables">Zero
+                                                                                consumables.</li>
+                                                                            <li data-translate="no_side_effects">
+                                                                                Non-invasive, no downtime, no side
                                                                                 effects and pain free.</li>
-                                                                            <li>Comes with 4 applicators, allowing
+                                                                            <li data-translate="four_applicators">Comes
+                                                                                with 4 applicators, allowing
                                                                                 treatments for stomach, buttocks, arms
                                                                                 and thighs.</li>
                                                                         </ul>
@@ -3481,7 +3629,8 @@
                                                                 <div
                                                                     class="wpb_text_column wpb_content_element  custom-heading-size-small text-white">
                                                                     <div class="wpb_wrapper">
-                                                                        <h2>Clinically tested<br>
+                                                                        <h2 data-translate="tested_independently">
+                                                                            Clinically tested<br>
                                                                             in <span class="text-gold">7
                                                                                 independent</span><br>
                                                                             studies</h2>
@@ -3493,7 +3642,8 @@
                                                                 <div
                                                                     class="wpb_text_column wpb_content_element  font-32 text-white">
                                                                     <div class="wpb_wrapper">
-                                                                        <p><strong>VA Body Sculpt is the only treatment
+                                                                        <p data-translate="buttock_lift_treatment">
+                                                                            <strong>VA Body Sculpt is the only treatment
                                                                                 that helps both women and men burn fat
                                                                                 while toning the underlying muscles.
                                                                                 Moreover, VA Body Sculpt® is the world’s
@@ -3541,8 +3691,9 @@
                                                                     style="text-align: left">
                                                                     <div class="qodef-st-inner">
                                                                         <h2 class="qodef-st-title"
-                                                                            style="color: #ffffff">
-                                                                            Tech specs </h2>
+                                                                            style="color: #ffffff"
+                                                                            data-translate="specifications">
+                                                                            Specifications </h2>
                                                                     </div>
                                                                 </div>
                                                                 <div class="vc_empty_space" style="height: 32px"><span
@@ -3554,52 +3705,67 @@
                                                                             <div class="tech-specs-left">
                                                                                 <div
                                                                                     class="tech-specs-single small-paddings">
-                                                                                    <div>Size</div>
+                                                                                    <div data-translate="size">Size
+                                                                                    </div>
                                                                                     <div>
                                                                                         <div class="tech-specs-inside">
-                                                                                            <div>Width</div>
+                                                                                            <div data-translate="width">
+                                                                                                Width</div>
                                                                                             <div>58 cm (22,8 inches)
                                                                                             </div>
                                                                                         </div>
                                                                                         <div class="tech-specs-inside">
-                                                                                            <div>Height</div>
+                                                                                            <div
+                                                                                                data-translate="height">
+                                                                                                Height</div>
                                                                                             <div>136,3 cm (53,66 inches)
                                                                                             </div>
                                                                                         </div>
                                                                                         <div class="tech-specs-inside">
-                                                                                            <div>Depth</div>
+                                                                                            <div data-translate="depth">
+                                                                                                Depth</div>
                                                                                             <div>62,9 cm (24,7 inches)
                                                                                             </div>
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="tech-specs-single">
-                                                                                    <div>Magnetic vibration intensity
+                                                                                    <div
+                                                                                        data-translate="vibration_intensity">
+                                                                                        Magnetic vibration intensity
                                                                                     </div>
                                                                                     <div>7 Tesla</div>
                                                                                 </div>
                                                                                 <div class="tech-specs-single">
-                                                                                    <div>Frequency</div>
+                                                                                    <div data-translate="frequency">
+                                                                                        Frequency</div>
                                                                                     <div>1-150Hz</div>
                                                                                 </div>
                                                                                 <div class="tech-specs-single">
-                                                                                    <div>Power</div>
+                                                                                    <div data-translate="power">Power
+                                                                                    </div>
                                                                                     <div>5000W</div>
                                                                                 </div>
                                                                                 <div class="tech-specs-single">
-                                                                                    <div>Pulse width</div>
+                                                                                    <div data-translate="pulse_width">
+                                                                                        Pulse width</div>
                                                                                     <div>310μs±10%</div>
                                                                                 </div>
                                                                                 <div class="tech-specs-single">
-                                                                                    <div>Cooling</div>
-                                                                                    <div>Air cooling</div>
+                                                                                    <div data-translate="cooling">
+                                                                                        Cooling</div>
+                                                                                    <div data-translate="air_cooling">
+                                                                                        Air cooling</div>
                                                                                 </div>
                                                                                 <div class="tech-specs-single">
-                                                                                    <div>Radio frequency pads</div>
+                                                                                    <div data-translate="rf_pads">Radio
+                                                                                        frequency pads</div>
                                                                                     <div>Yes</div>
                                                                                 </div>
                                                                                 <div class="tech-specs-single">
-                                                                                    <div>Number of pads</div>
+                                                                                    <div
+                                                                                        data-translate="number_of_pads">
+                                                                                        Number of pads</div>
                                                                                     <div>5</div>
                                                                                 </div>
                                                                             </div>
@@ -3749,7 +3915,9 @@
                                                                                     <div class="wpb_wrapper">
                                                                                         <div class="tech-buttons">
                                                                                             <a href="get-quote.html"
-                                                                                                class="btn-inheo">get a
+                                                                                                class="btn-inheo"
+                                                                                                data-translate="quote_text_link">get
+                                                                                                a
                                                                                                 quote</a>
                                                                                         </div>
                                                                                     </div>
@@ -3830,14 +3998,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3">
-                        <h3 class="text-light" data-translate="live_chat">Live chat</h3>
-                        <p class="text-light" data-translate="live_chat_desc">
-                            Our advisors are available to answer any question. Feel free to
-                            join our Live Chat.
-                        </p>
-                        <a class="btn btn-light btn-outline" id="join_btn" data-translate="join_btn">Join</a>
-                    </div>
+
 
                     <div class="col-lg-3">
                         <h3 class="text-light" data-translate="tech_support">
@@ -3847,7 +4008,8 @@
                             If you have any issues with the device, contact with our
                             technician team to solve the problem.
                         </p>
-                        <a class="btn btn-light btn-outline" data-translate="more_btn">MORE</a>
+                        <a class="btn btn-light btn-outline" data-translate="more_btn"
+                            href="mailto:info@vacuactivecy.com">MORE</a>
                     </div>
                 </div>
             </div>
@@ -3922,7 +4084,7 @@
                                             Get in Touch
                                         </div>
                                         <form class="widget-contact-form" role="form" method="post" id="contact-us"
-                                            name="contact-us" data-success-message-delay="40000" novalidate>
+                                           data-success-message-delay="40000" novalidate>
                                             <div class="row">
                                                 <div class="form-group col-md-12">
                                                     <input type="text" aria-required="true" required name="fullName"
@@ -4465,7 +4627,7 @@
     <!-- Scroll top -->
     <script src="js/custom.js"></script>
     <a id="scrollTop"><i class="icon-chevron-up"></i><i class="icon-chevron-up"></i></a>
-    <script src="js/translations.js"></script>
+    <script src="js/VA-Body-Sculpt-translations.js"></script>
     <!--Plugins-->
     <script src="js/plugins.js"></script>
     <!--Template functions-->

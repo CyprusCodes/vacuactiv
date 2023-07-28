@@ -1,20 +1,13 @@
 /* show hide language btn */
-let lang = document.getElementById("lang");
 
-function toggleLangBtn() {
-  if (lang.className === "dropdown-menu") {
-    lang.classList.add("show");
-  } else {
-    lang.classList.remove("show");
-  }
-}
 /* contact form  */
 
 $("#form-submit").on("click", function (e) {
   let x = document.forms["contact-us"]["email"].value;
   var $formContact = $("#contact-us"),
-    url = "https://api.youth.com/"; //this has to be taken from a deployed google spread sheet
-  var lang = window.localStorage.getItem("language");
+    url = "https://script.google.com/macros/s/AKfycbybdmWfctrUDi4Rq38WdeNnatVgb_BIVbk9sGBP3-Gcscr98g4OtpOaSWEQkoGvXq5TNQ/exec"
+  console.log($formContact['fullName']);
+
   if (x == "") {
     if (lang === "ru") {
       alert("Электронная почта должна быть заполнена");
@@ -121,6 +114,7 @@ $("#form-submit").on("click", function (e) {
         method: "GET",
         dataType: "json",
         data: $formContact.serializeArray(),
+        // data: { htmlBody: "ssssss"},
         success: function success(data) {
           $('button[type="submit"]').removeClass("clicked");
           $("#form-submit").html(
@@ -160,7 +154,8 @@ $("#form-submit").on("click", function (e) {
         )
       );
     }
-  }
+  } 
+  console.log($formContact, 'afterrrr');
   setTimeout(function () {
     $("#form-result2").css("display", "none");
   }, 3500);
