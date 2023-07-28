@@ -1556,7 +1556,7 @@ input:-ms-input-placeholder[type=text] {
 input[type=email],
 input[type=text] {
     font-size: 15px;
-    color: #293478;
+    color: #151515;
     font-weight: 600;
     font-family: Montserrat, sans-serif;
     padding-left: 0;
