@@ -1,3 +1,9 @@
 .tp-tabs{
     display: none !important;
 }
+.our_pr:hover{
+    color: whitesmoke !important;
+}
+.our_pr{
+    color: #009aee !important;
+}

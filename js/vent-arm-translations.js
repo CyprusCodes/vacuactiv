@@ -269,3 +269,43 @@ cta: "Αντίστροφη A",
       e.preventDefault();
     });
   
+
+    const images = ["https://vacuactiv.com/wp-content/uploads/2022/08/armChair_obrot30_0000.png.png", "https://vacuactiv.com/wp-content/uploads/2022/08/armChair_obrot30_0001.png.png", "https://vacuactiv.com/wp-content/uploads/2022/08/armChair_obrot30_0002.png.png", "https://vacuactiv.com/wp-content/uploads/2022/08/armChair_obrot30_0003.png.png", "https://vacuactiv.com/wp-content/uploads/2022/08/armChair_obrot30_0004.png.png", "https://vacuactiv.com/wp-content/uploads/2022/08/armChair_obrot30_0005.png.png", "https://vacuactiv.com/wp-content/uploads/2022/08/armChair_obrot30_0006.png.png", "https://vacuactiv.com/wp-content/uploads/2022/08/armChair_obrot30_0007.png.png", "https://vacuactiv.com/wp-content/uploads/2022/08/armChair_obrot30_0008.png.png", "https://vacuactiv.com/wp-content/uploads/2022/08/armChair_obrot30_0009.png.png", "https://vacuactiv.com/wp-content/uploads/2022/08/armChair_obrot30_0010.png.png", "https://vacuactiv.com/wp-content/uploads/2022/08/armChair_obrot30_0011.png.png"]; // Add more image URLs here
+    const image = document.getElementById('ddd-image');
+    let isDragging = false;
+    let startX;
+    let currentIndex = 0;
+    
+    image.addEventListener('mousedown', handleDragStart);
+    image.addEventListener('mousemove', handleDragMove);
+    image.addEventListener('mouseup', handleDragEnd);
+    
+    function handleDragStart(e) {
+      isDragging = true;
+      startX = e.clientX;
+    }
+    
+    function handleDragMove(e) {
+      if (!isDragging) return;
+      const deltaX = e.clientX - startX;
+      const sensitivity = 15; // Adjust the sensitivity to change the image
+      if (deltaX > sensitivity) {
+        changeImage(1); // Dragging right
+      } else if (deltaX < -sensitivity) {
+        changeImage(-1); // Dragging left
+      }
+    }
+    
+    function handleDragEnd() {
+      isDragging = false;
+    }
+    
+    function changeImage(direction) {
+      currentIndex += direction;
+      if (currentIndex < 0) {
+        currentIndex = images.length - 1;
+      } else if (currentIndex >= images.length) {
+        currentIndex = 0;
+      }
+      image.src = images[currentIndex];
+    }
